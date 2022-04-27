@@ -1,0 +1,9 @@
+/* pages/tabbar/classify/classify.wxss */
+.goods-card{
+  width: 560rpx;
+  border-radius: 6%;
+  margin: 20rpx;
+}
+.goods-title{
+  font-size: 28rpx;
+}

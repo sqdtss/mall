@@ -1,0 +1,31 @@
+# 启动端口号
+server:
+  port: 8000
+
+# MySQL数据源配置
+mysql:
+  username: root
+  password: 123456
+  url: tcp(localhost:3306)/mall?charset=utf8&parseTime=True&loc=Local
+  maxIdleConns: 10
+  maxOpenConns: 100
+  connMaxLifetime: 1440
+
+# Redis配置
+redis:
+  addr: localhost:6379
+  password:
+  db: 0
+
+# Elastic配置
+elastic:
+  url: http://127.0.0.1:9200/
+
+# 图片路径配置
+upload:
+  savePath: /Users/ts/workspace/GoWorkSpace/mall/images/
+  accessUrl: http://localhost:8000/image/
+
+# JWT配置
+jwt:
+  signingKey: z3d6k8v0n3w7m9sa1fd0u09h

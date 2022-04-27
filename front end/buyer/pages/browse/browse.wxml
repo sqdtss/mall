@@ -1,0 +1,16 @@
+<!--pages/browsing_history/index.wxml-->
+<van-checkbox-group value="{{ productIds }}" wx:for="{{ browseInfo }}" wx:key="index" bind:change="onChange">
+  <van-grid custom-class="grid-card">
+      <van-cell title="{{ item.browseTime }}" value-class="value-class" clickable
+        data-index="{{ index }}" bind:click="toggle">
+        <van-checkbox catch:tap="noop" class="checkboxes-{{ index }}" name="{{ item.browseItem.id }}" />
+      </van-cell>
+      <van-card id="{{ item.browseItem.id }}" bindtap="onClick" 
+            price="{{ item.browseItem.price }}" title="{{ item.browseItem.title }}" thumb="{{ item.browseItem.mainImage }}" />
+  </van-grid>
+</van-checkbox-group>
+<van-empty wx:if="{{show}}" description="还没有浏览记录" />
+<view class="view-bottom">
+    <van-button type="danger" custom-class="button" round bind:click="delete">删除已选</van-button>
+  </view>
+  <view style="height: 100px;"></view>

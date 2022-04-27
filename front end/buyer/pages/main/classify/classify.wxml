@@ -1,0 +1,27 @@
+<!--pages/tabbar/classify/classify.wxml-->
+<van-search value="{{ value }}" placeholder="请输入搜索关键词" />
+<van-tree-select
+  items="{{ items }}"
+  height="1000rpx"
+  main-active-index="{{ mainActiveIndex }}"
+  active-id="{{ activeId }}"
+  bind:click-nav="onClickNav"
+  bind:click-item="onClickItem"
+>
+  <van-card
+    wx:for="{{product}}"
+    wx:key="{{item.id}}"
+    id="{{item.id}}"
+    price="{{item.price}}"
+    desc="{{item.description}}"
+    title="{{item.title}}"
+    thumb="{{item.mainImage}}"
+    slot="content"
+    custom-class="goods-card"
+    title-class="goods-title"
+    price-class="goods-price"
+  />
+  <view wx:if="{{product == []}}" style="width: 560rpx;background-color: aquamarine;height: 200px;" slot="content">
+    <van-empty description="描述文字" />
+  </view>
+  </van-tree-select>

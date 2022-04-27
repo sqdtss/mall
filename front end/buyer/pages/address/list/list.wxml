@@ -1,0 +1,24 @@
+<!--pages/address/list/list.wxml-->
+<view class="main">
+  <van-cell-group inset>
+    <van-cell wx:for="{{address}}" 
+              wx:key="{{item.id}}"
+              size="large" 
+              border="{{false}}"
+              label="{{item.province + item.city + item.district + item.detailedAddress}}">
+      <view slot="title">
+        <view class="van-cell-text">{{item.name}}
+        <text class="text-mobile">{{item.mobile}} </text>
+        <van-tag wx:if="{{item.isDefault == 1}}" 
+        color="#ffe1e1" text-color="#FD5432">默认</van-tag>
+        </view>
+      </view>
+      <van-icon slot="right-icon" name="edit" id="{{item.id}}"  bind:click="editAddress" class="custom-icon" size="20px"/>
+    </van-cell>
+  </van-cell-group>
+  <view class="view-footer">
+    <van-button icon="plus" custom-class="button" round color="linear-gradient(to right, #FF9017, #FD5432)"
+    bind:click="addAddress">添加收货地址</van-button>
+  </view>
+  <view style="height: 100px;"></view>
+</view>

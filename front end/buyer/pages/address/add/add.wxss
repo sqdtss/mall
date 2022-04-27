@@ -1,0 +1,11 @@
+/* pages/address/add/add.wxss */
+.cell-group{
+  margin: 2%;
+}
+.cell-title{
+  color: rgb(98, 98, 99);
+}
+.button{
+  width: 90%;
+  margin: 5%;
+}

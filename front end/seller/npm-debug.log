@@ -1,0 +1,1766 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/node', '/usr/bin/npm', 'install' ]
+2 info using npm@3.5.2
+3 info using node@v8.10.0
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly install normalizeTree
+8 silly loadCurrentTree Finishing
+9 silly loadIdealTree Starting
+10 silly install loadIdealTree
+11 silly cloneCurrentTree Starting
+12 silly install cloneCurrentTreeToIdealTree
+13 silly cloneCurrentTree Finishing
+14 silly loadShrinkwrap Starting
+15 silly install loadShrinkwrap
+16 silly loadShrinkwrap Finishing
+17 silly loadAllDepsIntoIdealTree Starting
+18 silly install loadAllDepsIntoIdealTree
+19 silly fetchNamedPackageData @vue/compiler-sfc
+20 silly mapToRegistry name @vue/compiler-sfc
+21 silly mapToRegistry scope (from package name) @vue
+22 verbose mapToRegistry no registry URL found in name for scope @vue
+23 silly mapToRegistry using default registry
+24 silly mapToRegistry registry https://registry.npmjs.org/
+25 silly mapToRegistry uri https://registry.npmjs.org/@vue%2fcompiler-sfc
+26 silly fetchNamedPackageData axios
+27 silly mapToRegistry name axios
+28 silly mapToRegistry using default registry
+29 silly mapToRegistry registry https://registry.npmjs.org/
+30 silly mapToRegistry uri https://registry.npmjs.org/axios
+31 silly fetchNamedPackageData core-js
+32 silly mapToRegistry name core-js
+33 silly mapToRegistry using default registry
+34 silly mapToRegistry registry https://registry.npmjs.org/
+35 silly mapToRegistry uri https://registry.npmjs.org/core-js
+36 silly fetchNamedPackageData echarts
+37 silly mapToRegistry name echarts
+38 silly mapToRegistry using default registry
+39 silly mapToRegistry registry https://registry.npmjs.org/
+40 silly mapToRegistry uri https://registry.npmjs.org/echarts
+41 silly fetchNamedPackageData element-plus
+42 silly mapToRegistry name element-plus
+43 silly mapToRegistry using default registry
+44 silly mapToRegistry registry https://registry.npmjs.org/
+45 silly mapToRegistry uri https://registry.npmjs.org/element-plus
+46 silly fetchNamedPackageData moment
+47 silly mapToRegistry name moment
+48 silly mapToRegistry using default registry
+49 silly mapToRegistry registry https://registry.npmjs.org/
+50 silly mapToRegistry uri https://registry.npmjs.org/moment
+51 silly fetchNamedPackageData postcss
+52 silly mapToRegistry name postcss
+53 silly mapToRegistry using default registry
+54 silly mapToRegistry registry https://registry.npmjs.org/
+55 silly mapToRegistry uri https://registry.npmjs.org/postcss
+56 silly fetchNamedPackageData vue
+57 silly mapToRegistry name vue
+58 silly mapToRegistry using default registry
+59 silly mapToRegistry registry https://registry.npmjs.org/
+60 silly mapToRegistry uri https://registry.npmjs.org/vue
+61 silly fetchNamedPackageData vue-router
+62 silly mapToRegistry name vue-router
+63 silly mapToRegistry using default registry
+64 silly mapToRegistry registry https://registry.npmjs.org/
+65 silly mapToRegistry uri https://registry.npmjs.org/vue-router
+66 silly fetchNamedPackageData vuex
+67 silly mapToRegistry name vuex
+68 silly mapToRegistry using default registry
+69 silly mapToRegistry registry https://registry.npmjs.org/
+70 silly mapToRegistry uri https://registry.npmjs.org/vuex
+71 verbose request uri https://registry.npmjs.org/axios
+72 verbose request no auth needed
+73 info attempt registry request try #1 at 2:51:16 PM
+74 verbose request id a0b7e41becdf96dd
+75 verbose etag W/"0f9b920ee3dfb38f4a5df1b699da8df5"
+76 verbose lastModified Mon, 25 Apr 2022 17:07:25 GMT
+77 http request GET https://registry.npmjs.org/axios
+78 verbose request uri https://registry.npmjs.org/moment
+79 verbose request no auth needed
+80 info attempt registry request try #1 at 2:51:16 PM
+81 verbose etag W/"2a5215fdaa528a0681447987dd7618ad"
+82 verbose lastModified Mon, 25 Apr 2022 06:06:15 GMT
+83 http request GET https://registry.npmjs.org/moment
+84 verbose request uri https://registry.npmjs.org/@vue%2fcompiler-sfc
+85 verbose request no auth needed
+86 info attempt registry request try #1 at 2:51:16 PM
+87 verbose etag W/"681af48bd8c111510f85e5d520080b49"
+88 verbose lastModified Thu, 14 Apr 2022 10:14:43 GMT
+89 http request GET https://registry.npmjs.org/@vue%2fcompiler-sfc
+90 verbose request uri https://registry.npmjs.org/core-js
+91 verbose request no auth needed
+92 info attempt registry request try #1 at 2:51:16 PM
+93 verbose etag W/"5b00c14730ee8a36e33d155e79d7ae4e"
+94 verbose lastModified Thu, 21 Apr 2022 13:18:18 GMT
+95 http request GET https://registry.npmjs.org/core-js
+96 verbose request uri https://registry.npmjs.org/echarts
+97 verbose request no auth needed
+98 info attempt registry request try #1 at 2:51:16 PM
+99 verbose etag W/"040346fe948bff54d4d1befea2c3b2a6"
+100 verbose lastModified Fri, 01 Apr 2022 04:46:44 GMT
+101 http request GET https://registry.npmjs.org/echarts
+102 verbose request uri https://registry.npmjs.org/element-plus
+103 verbose request no auth needed
+104 info attempt registry request try #1 at 2:51:16 PM
+105 verbose etag W/"83058ce2d02fc8ef32b567bbaaf8ff6b"
+106 verbose lastModified Mon, 25 Apr 2022 15:52:32 GMT
+107 http request GET https://registry.npmjs.org/element-plus
+108 verbose request uri https://registry.npmjs.org/vuex
+109 verbose request no auth needed
+110 info attempt registry request try #1 at 2:51:16 PM
+111 verbose etag W/"d7afba5828ce13c0dc7752b1772374f5"
+112 verbose lastModified Mon, 07 Feb 2022 04:10:07 GMT
+113 http request GET https://registry.npmjs.org/vuex
+114 verbose request uri https://registry.npmjs.org/postcss
+115 verbose request no auth needed
+116 info attempt registry request try #1 at 2:51:16 PM
+117 verbose etag W/"7b1c4f6113ada835e2968f51682a98fc"
+118 verbose lastModified Wed, 16 Mar 2022 08:38:34 GMT
+119 http request GET https://registry.npmjs.org/postcss
+120 verbose request uri https://registry.npmjs.org/vue-router
+121 verbose request no auth needed
+122 info attempt registry request try #1 at 2:51:16 PM
+123 verbose etag W/"66a1ffcd4034b1267b704ad88aff1f71"
+124 verbose lastModified Thu, 10 Mar 2022 18:29:50 GMT
+125 http request GET https://registry.npmjs.org/vue-router
+126 verbose request uri https://registry.npmjs.org/vue
+127 verbose request no auth needed
+128 info attempt registry request try #1 at 2:51:16 PM
+129 verbose etag W/"a7f5a0e998b363e8c6f778ed7db49951"
+130 verbose lastModified Sat, 23 Apr 2022 03:16:08 GMT
+131 http request GET https://registry.npmjs.org/vue
+132 http 304 https://registry.npmjs.org/postcss
+133 verbose headers { date: 'Tue, 26 Apr 2022 06:51:18 GMT',
+133 verbose headers   connection: 'keep-alive',
+133 verbose headers   'cf-ray': '701d63a06f343dbe-HKG',
+133 verbose headers   age: '53',
+133 verbose headers   'cache-control': 'public, max-age=300',
+133 verbose headers   etag: '"7b1c4f6113ada835e2968f51682a98fc"',
+133 verbose headers   'last-modified': 'Wed, 16 Mar 2022 08:38:34 GMT',
+133 verbose headers   vary: 'Accept-Encoding',
+133 verbose headers   'cf-cache-status': 'HIT',
+133 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+133 verbose headers   'x-amz-replication-status': 'COMPLETED',
+133 verbose headers   server: 'cloudflare' }
+134 silly get cb [ 304,
+134 silly get   { date: 'Tue, 26 Apr 2022 06:51:18 GMT',
+134 silly get     connection: 'keep-alive',
+134 silly get     'cf-ray': '701d63a06f343dbe-HKG',
+134 silly get     age: '53',
+134 silly get     'cache-control': 'public, max-age=300',
+134 silly get     etag: '"7b1c4f6113ada835e2968f51682a98fc"',
+134 silly get     'last-modified': 'Wed, 16 Mar 2022 08:38:34 GMT',
+134 silly get     vary: 'Accept-Encoding',
+134 silly get     'cf-cache-status': 'HIT',
+134 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+134 silly get     'x-amz-replication-status': 'COMPLETED',
+134 silly get     server: 'cloudflare' } ]
+135 verbose etag https://registry.npmjs.org/postcss from cache
+136 verbose get saving postcss to /root/.npm/registry.npmjs.org/postcss/.cache.json
+137 http 304 https://registry.npmjs.org/vue-router
+138 verbose headers { date: 'Tue, 26 Apr 2022 06:51:18 GMT',
+138 verbose headers   connection: 'keep-alive',
+138 verbose headers   'cf-ray': '701d63a06fb36e37-HKG',
+138 verbose headers   age: '40',
+138 verbose headers   'cache-control': 'public, max-age=300',
+138 verbose headers   etag: '"66a1ffcd4034b1267b704ad88aff1f71"',
+138 verbose headers   'last-modified': 'Thu, 10 Mar 2022 18:29:50 GMT',
+138 verbose headers   vary: 'Accept-Encoding',
+138 verbose headers   'cf-cache-status': 'HIT',
+138 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+138 verbose headers   'x-amz-replication-status': 'COMPLETED',
+138 verbose headers   server: 'cloudflare' }
+139 silly get cb [ 304,
+139 silly get   { date: 'Tue, 26 Apr 2022 06:51:18 GMT',
+139 silly get     connection: 'keep-alive',
+139 silly get     'cf-ray': '701d63a06fb36e37-HKG',
+139 silly get     age: '40',
+139 silly get     'cache-control': 'public, max-age=300',
+139 silly get     etag: '"66a1ffcd4034b1267b704ad88aff1f71"',
+139 silly get     'last-modified': 'Thu, 10 Mar 2022 18:29:50 GMT',
+139 silly get     vary: 'Accept-Encoding',
+139 silly get     'cf-cache-status': 'HIT',
+139 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+139 silly get     'x-amz-replication-status': 'COMPLETED',
+139 silly get     server: 'cloudflare' } ]
+140 verbose etag https://registry.npmjs.org/vue-router from cache
+141 verbose get saving vue-router to /root/.npm/registry.npmjs.org/vue-router/.cache.json
+142 http 304 https://registry.npmjs.org/vuex
+143 verbose headers { date: 'Tue, 26 Apr 2022 06:51:18 GMT',
+143 verbose headers   connection: 'keep-alive',
+143 verbose headers   'cf-ray': '701d63a07b252458-HKG',
+143 verbose headers   age: '239',
+143 verbose headers   'cache-control': 'public, max-age=300',
+143 verbose headers   etag: '"d7afba5828ce13c0dc7752b1772374f5"',
+143 verbose headers   'last-modified': 'Mon, 07 Feb 2022 04:10:07 GMT',
+143 verbose headers   vary: 'Accept-Encoding',
+143 verbose headers   'cf-cache-status': 'HIT',
+143 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+143 verbose headers   'x-amz-replication-status': 'COMPLETED',
+143 verbose headers   server: 'cloudflare' }
+144 silly get cb [ 304,
+144 silly get   { date: 'Tue, 26 Apr 2022 06:51:18 GMT',
+144 silly get     connection: 'keep-alive',
+144 silly get     'cf-ray': '701d63a07b252458-HKG',
+144 silly get     age: '239',
+144 silly get     'cache-control': 'public, max-age=300',
+144 silly get     etag: '"d7afba5828ce13c0dc7752b1772374f5"',
+144 silly get     'last-modified': 'Mon, 07 Feb 2022 04:10:07 GMT',
+144 silly get     vary: 'Accept-Encoding',
+144 silly get     'cf-cache-status': 'HIT',
+144 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+144 silly get     'x-amz-replication-status': 'COMPLETED',
+144 silly get     server: 'cloudflare' } ]
+145 verbose etag https://registry.npmjs.org/vuex from cache
+146 verbose get saving vuex to /root/.npm/registry.npmjs.org/vuex/.cache.json
+147 http 304 https://registry.npmjs.org/moment
+148 verbose headers { date: 'Tue, 26 Apr 2022 06:51:18 GMT',
+148 verbose headers   connection: 'keep-alive',
+148 verbose headers   'cf-ray': '701d63a07d5832c1-HKG',
+148 verbose headers   age: '36',
+148 verbose headers   'cache-control': 'public, max-age=300',
+148 verbose headers   etag: '"2a5215fdaa528a0681447987dd7618ad"',
+148 verbose headers   'last-modified': 'Mon, 25 Apr 2022 06:06:15 GMT',
+148 verbose headers   vary: 'Accept-Encoding',
+148 verbose headers   'cf-cache-status': 'HIT',
+148 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+148 verbose headers   'x-amz-replication-status': 'COMPLETED',
+148 verbose headers   server: 'cloudflare' }
+149 silly get cb [ 304,
+149 silly get   { date: 'Tue, 26 Apr 2022 06:51:18 GMT',
+149 silly get     connection: 'keep-alive',
+149 silly get     'cf-ray': '701d63a07d5832c1-HKG',
+149 silly get     age: '36',
+149 silly get     'cache-control': 'public, max-age=300',
+149 silly get     etag: '"2a5215fdaa528a0681447987dd7618ad"',
+149 silly get     'last-modified': 'Mon, 25 Apr 2022 06:06:15 GMT',
+149 silly get     vary: 'Accept-Encoding',
+149 silly get     'cf-cache-status': 'HIT',
+149 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+149 silly get     'x-amz-replication-status': 'COMPLETED',
+149 silly get     server: 'cloudflare' } ]
+150 verbose etag https://registry.npmjs.org/moment from cache
+151 verbose get saving moment to /root/.npm/registry.npmjs.org/moment/.cache.json
+152 http 304 https://registry.npmjs.org/core-js
+153 verbose headers { date: 'Tue, 26 Apr 2022 06:51:18 GMT',
+153 verbose headers   connection: 'keep-alive',
+153 verbose headers   'cf-ray': '701d63a078826e2b-HKG',
+153 verbose headers   age: '59',
+153 verbose headers   'cache-control': 'public, max-age=300',
+153 verbose headers   etag: '"5b00c14730ee8a36e33d155e79d7ae4e"',
+153 verbose headers   'last-modified': 'Thu, 21 Apr 2022 13:18:18 GMT',
+153 verbose headers   vary: 'Accept-Encoding',
+153 verbose headers   'cf-cache-status': 'HIT',
+153 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+153 verbose headers   'x-amz-replication-status': 'PENDING',
+153 verbose headers   server: 'cloudflare' }
+154 silly get cb [ 304,
+154 silly get   { date: 'Tue, 26 Apr 2022 06:51:18 GMT',
+154 silly get     connection: 'keep-alive',
+154 silly get     'cf-ray': '701d63a078826e2b-HKG',
+154 silly get     age: '59',
+154 silly get     'cache-control': 'public, max-age=300',
+154 silly get     etag: '"5b00c14730ee8a36e33d155e79d7ae4e"',
+154 silly get     'last-modified': 'Thu, 21 Apr 2022 13:18:18 GMT',
+154 silly get     vary: 'Accept-Encoding',
+154 silly get     'cf-cache-status': 'HIT',
+154 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+154 silly get     'x-amz-replication-status': 'PENDING',
+154 silly get     server: 'cloudflare' } ]
+155 verbose etag https://registry.npmjs.org/core-js from cache
+156 verbose get saving core-js to /root/.npm/registry.npmjs.org/core-js/.cache.json
+157 http 304 https://registry.npmjs.org/vue
+158 verbose headers { date: 'Tue, 26 Apr 2022 06:51:18 GMT',
+158 verbose headers   connection: 'keep-alive',
+158 verbose headers   'cf-ray': '701d63a0784ed193-HKG',
+158 verbose headers   age: '253',
+158 verbose headers   'cache-control': 'public, max-age=300',
+158 verbose headers   etag: '"a7f5a0e998b363e8c6f778ed7db49951"',
+158 verbose headers   'last-modified': 'Sat, 23 Apr 2022 03:16:08 GMT',
+158 verbose headers   vary: 'Accept-Encoding',
+158 verbose headers   'cf-cache-status': 'HIT',
+158 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+158 verbose headers   'x-amz-replication-status': 'COMPLETED',
+158 verbose headers   server: 'cloudflare' }
+159 silly get cb [ 304,
+159 silly get   { date: 'Tue, 26 Apr 2022 06:51:18 GMT',
+159 silly get     connection: 'keep-alive',
+159 silly get     'cf-ray': '701d63a0784ed193-HKG',
+159 silly get     age: '253',
+159 silly get     'cache-control': 'public, max-age=300',
+159 silly get     etag: '"a7f5a0e998b363e8c6f778ed7db49951"',
+159 silly get     'last-modified': 'Sat, 23 Apr 2022 03:16:08 GMT',
+159 silly get     vary: 'Accept-Encoding',
+159 silly get     'cf-cache-status': 'HIT',
+159 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+159 silly get     'x-amz-replication-status': 'COMPLETED',
+159 silly get     server: 'cloudflare' } ]
+160 verbose etag https://registry.npmjs.org/vue from cache
+161 verbose get saving vue to /root/.npm/registry.npmjs.org/vue/.cache.json
+162 http 304 https://registry.npmjs.org/axios
+163 verbose headers { date: 'Tue, 26 Apr 2022 06:51:18 GMT',
+163 verbose headers   connection: 'keep-alive',
+163 verbose headers   'cf-ray': '701d63a05807d94e-HKG',
+163 verbose headers   age: '248',
+163 verbose headers   'cache-control': 'public, max-age=300',
+163 verbose headers   etag: '"0f9b920ee3dfb38f4a5df1b699da8df5"',
+163 verbose headers   'last-modified': 'Mon, 25 Apr 2022 17:07:25 GMT',
+163 verbose headers   vary: 'Accept-Encoding',
+163 verbose headers   'cf-cache-status': 'HIT',
+163 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+163 verbose headers   'x-amz-replication-status': 'PENDING',
+163 verbose headers   server: 'cloudflare' }
+164 silly get cb [ 304,
+164 silly get   { date: 'Tue, 26 Apr 2022 06:51:18 GMT',
+164 silly get     connection: 'keep-alive',
+164 silly get     'cf-ray': '701d63a05807d94e-HKG',
+164 silly get     age: '248',
+164 silly get     'cache-control': 'public, max-age=300',
+164 silly get     etag: '"0f9b920ee3dfb38f4a5df1b699da8df5"',
+164 silly get     'last-modified': 'Mon, 25 Apr 2022 17:07:25 GMT',
+164 silly get     vary: 'Accept-Encoding',
+164 silly get     'cf-cache-status': 'HIT',
+164 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+164 silly get     'x-amz-replication-status': 'PENDING',
+164 silly get     server: 'cloudflare' } ]
+165 verbose etag https://registry.npmjs.org/axios from cache
+166 verbose get saving axios to /root/.npm/registry.npmjs.org/axios/.cache.json
+167 http 304 https://registry.npmjs.org/@vue%2fcompiler-sfc
+168 verbose headers { date: 'Tue, 26 Apr 2022 06:51:18 GMT',
+168 verbose headers   connection: 'keep-alive',
+168 verbose headers   'cf-ray': '701d63a06a568b89-HKG',
+168 verbose headers   age: '263',
+168 verbose headers   'cache-control': 'public, max-age=300',
+168 verbose headers   etag: '"681af48bd8c111510f85e5d520080b49"',
+168 verbose headers   'last-modified': 'Thu, 14 Apr 2022 10:14:43 GMT',
+168 verbose headers   vary: 'Accept-Encoding',
+168 verbose headers   'cf-cache-status': 'HIT',
+168 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+168 verbose headers   'x-amz-replication-status': 'PENDING',
+168 verbose headers   server: 'cloudflare' }
+169 silly get cb [ 304,
+169 silly get   { date: 'Tue, 26 Apr 2022 06:51:18 GMT',
+169 silly get     connection: 'keep-alive',
+169 silly get     'cf-ray': '701d63a06a568b89-HKG',
+169 silly get     age: '263',
+169 silly get     'cache-control': 'public, max-age=300',
+169 silly get     etag: '"681af48bd8c111510f85e5d520080b49"',
+169 silly get     'last-modified': 'Thu, 14 Apr 2022 10:14:43 GMT',
+169 silly get     vary: 'Accept-Encoding',
+169 silly get     'cf-cache-status': 'HIT',
+169 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+169 silly get     'x-amz-replication-status': 'PENDING',
+169 silly get     server: 'cloudflare' } ]
+170 verbose etag https://registry.npmjs.org/@vue%2fcompiler-sfc from cache
+171 verbose get saving @vue/compiler-sfc to /root/.npm/registry.npmjs.org/_40vue_252fcompiler-sfc/.cache.json
+172 silly resolveWithNewModule vuex@4.0.2 checking installable status
+173 silly cache add args [ 'vuex@^4.0.2', null ]
+174 verbose cache add spec vuex@^4.0.2
+175 silly cache add parsed spec Result {
+175 silly cache add   raw: 'vuex@^4.0.2',
+175 silly cache add   scope: null,
+175 silly cache add   name: 'vuex',
+175 silly cache add   rawSpec: '^4.0.2',
+175 silly cache add   spec: '>=4.0.2 <5.0.0',
+175 silly cache add   type: 'range' }
+176 silly addNamed vuex@>=4.0.2 <5.0.0
+177 verbose addNamed ">=4.0.2 <5.0.0" is a valid semver range for vuex
+178 silly addNameRange { name: 'vuex', range: '>=4.0.2 <5.0.0', hasData: false }
+179 silly mapToRegistry name vuex
+180 silly mapToRegistry using default registry
+181 silly mapToRegistry registry https://registry.npmjs.org/
+182 silly mapToRegistry uri https://registry.npmjs.org/vuex
+183 verbose addNameRange registry:https://registry.npmjs.org/vuex not in flight; fetching
+184 silly resolveWithNewModule postcss@8.4.12 checking installable status
+185 silly cache add args [ 'postcss@^8.3.0', null ]
+186 verbose cache add spec postcss@^8.3.0
+187 silly cache add parsed spec Result {
+187 silly cache add   raw: 'postcss@^8.3.0',
+187 silly cache add   scope: null,
+187 silly cache add   name: 'postcss',
+187 silly cache add   rawSpec: '^8.3.0',
+187 silly cache add   spec: '>=8.3.0 <9.0.0',
+187 silly cache add   type: 'range' }
+188 silly addNamed postcss@>=8.3.0 <9.0.0
+189 verbose addNamed ">=8.3.0 <9.0.0" is a valid semver range for postcss
+190 silly addNameRange { name: 'postcss', range: '>=8.3.0 <9.0.0', hasData: false }
+191 silly mapToRegistry name postcss
+192 silly mapToRegistry using default registry
+193 silly mapToRegistry registry https://registry.npmjs.org/
+194 silly mapToRegistry uri https://registry.npmjs.org/postcss
+195 verbose addNameRange registry:https://registry.npmjs.org/postcss not in flight; fetching
+196 silly resolveWithNewModule vue-router@4.0.14 checking installable status
+197 silly cache add args [ 'vue-router@^4.0.8', null ]
+198 verbose cache add spec vue-router@^4.0.8
+199 silly cache add parsed spec Result {
+199 silly cache add   raw: 'vue-router@^4.0.8',
+199 silly cache add   scope: null,
+199 silly cache add   name: 'vue-router',
+199 silly cache add   rawSpec: '^4.0.8',
+199 silly cache add   spec: '>=4.0.8 <5.0.0',
+199 silly cache add   type: 'range' }
+200 silly addNamed vue-router@>=4.0.8 <5.0.0
+201 verbose addNamed ">=4.0.8 <5.0.0" is a valid semver range for vue-router
+202 silly addNameRange { name: 'vue-router', range: '>=4.0.8 <5.0.0', hasData: false }
+203 silly mapToRegistry name vue-router
+204 silly mapToRegistry using default registry
+205 silly mapToRegistry registry https://registry.npmjs.org/
+206 silly mapToRegistry uri https://registry.npmjs.org/vue-router
+207 verbose addNameRange registry:https://registry.npmjs.org/vue-router not in flight; fetching
+208 silly resolveWithNewModule core-js@3.22.2 checking installable status
+209 silly cache add args [ 'core-js@^3.6.5', null ]
+210 verbose cache add spec core-js@^3.6.5
+211 silly cache add parsed spec Result {
+211 silly cache add   raw: 'core-js@^3.6.5',
+211 silly cache add   scope: null,
+211 silly cache add   name: 'core-js',
+211 silly cache add   rawSpec: '^3.6.5',
+211 silly cache add   spec: '>=3.6.5 <4.0.0',
+211 silly cache add   type: 'range' }
+212 silly addNamed core-js@>=3.6.5 <4.0.0
+213 verbose addNamed ">=3.6.5 <4.0.0" is a valid semver range for core-js
+214 silly addNameRange { name: 'core-js', range: '>=3.6.5 <4.0.0', hasData: false }
+215 silly mapToRegistry name core-js
+216 silly mapToRegistry using default registry
+217 silly mapToRegistry registry https://registry.npmjs.org/
+218 silly mapToRegistry uri https://registry.npmjs.org/core-js
+219 verbose addNameRange registry:https://registry.npmjs.org/core-js not in flight; fetching
+220 silly resolveWithNewModule moment@2.29.3 checking installable status
+221 silly cache add args [ 'moment@^2.29.1', null ]
+222 verbose cache add spec moment@^2.29.1
+223 silly cache add parsed spec Result {
+223 silly cache add   raw: 'moment@^2.29.1',
+223 silly cache add   scope: null,
+223 silly cache add   name: 'moment',
+223 silly cache add   rawSpec: '^2.29.1',
+223 silly cache add   spec: '>=2.29.1 <3.0.0',
+223 silly cache add   type: 'range' }
+224 silly addNamed moment@>=2.29.1 <3.0.0
+225 verbose addNamed ">=2.29.1 <3.0.0" is a valid semver range for moment
+226 silly addNameRange { name: 'moment', range: '>=2.29.1 <3.0.0', hasData: false }
+227 silly mapToRegistry name moment
+228 silly mapToRegistry using default registry
+229 silly mapToRegistry registry https://registry.npmjs.org/
+230 silly mapToRegistry uri https://registry.npmjs.org/moment
+231 verbose addNameRange registry:https://registry.npmjs.org/moment not in flight; fetching
+232 silly resolveWithNewModule vue@3.2.33 checking installable status
+233 silly cache add args [ 'vue@^3.2.20', null ]
+234 verbose cache add spec vue@^3.2.20
+235 silly cache add parsed spec Result {
+235 silly cache add   raw: 'vue@^3.2.20',
+235 silly cache add   scope: null,
+235 silly cache add   name: 'vue',
+235 silly cache add   rawSpec: '^3.2.20',
+235 silly cache add   spec: '>=3.2.20 <4.0.0',
+235 silly cache add   type: 'range' }
+236 silly addNamed vue@>=3.2.20 <4.0.0
+237 verbose addNamed ">=3.2.20 <4.0.0" is a valid semver range for vue
+238 silly addNameRange { name: 'vue', range: '>=3.2.20 <4.0.0', hasData: false }
+239 silly mapToRegistry name vue
+240 silly mapToRegistry using default registry
+241 silly mapToRegistry registry https://registry.npmjs.org/
+242 silly mapToRegistry uri https://registry.npmjs.org/vue
+243 verbose addNameRange registry:https://registry.npmjs.org/vue not in flight; fetching
+244 silly resolveWithNewModule axios@0.21.4 checking installable status
+245 silly cache add args [ 'axios@^0.21.4', null ]
+246 verbose cache add spec axios@^0.21.4
+247 silly cache add parsed spec Result {
+247 silly cache add   raw: 'axios@^0.21.4',
+247 silly cache add   scope: null,
+247 silly cache add   name: 'axios',
+247 silly cache add   rawSpec: '^0.21.4',
+247 silly cache add   spec: '>=0.21.4 <0.22.0',
+247 silly cache add   type: 'range' }
+248 silly addNamed axios@>=0.21.4 <0.22.0
+249 verbose addNamed ">=0.21.4 <0.22.0" is a valid semver range for axios
+250 silly addNameRange { name: 'axios', range: '>=0.21.4 <0.22.0', hasData: false }
+251 silly mapToRegistry name axios
+252 silly mapToRegistry using default registry
+253 silly mapToRegistry registry https://registry.npmjs.org/
+254 silly mapToRegistry uri https://registry.npmjs.org/axios
+255 verbose addNameRange registry:https://registry.npmjs.org/axios not in flight; fetching
+256 verbose get https://registry.npmjs.org/vuex not expired, no request
+257 silly addNameRange number 2 { name: 'vuex', range: '>=4.0.2 <5.0.0', hasData: true }
+258 silly addNameRange versions [ 'vuex',
+258 silly addNameRange   [ '0.1.0',
+258 silly addNameRange     '0.2.0',
+258 silly addNameRange     '0.3.0',
+258 silly addNameRange     '0.4.0',
+258 silly addNameRange     '0.4.1',
+258 silly addNameRange     '0.4.2',
+258 silly addNameRange     '0.5.0',
+258 silly addNameRange     '0.5.1',
+258 silly addNameRange     '0.6.1',
+258 silly addNameRange     '0.6.2',
+258 silly addNameRange     '0.6.3',
+258 silly addNameRange     '0.7.0',
+258 silly addNameRange     '0.7.1',
+258 silly addNameRange     '0.8.0',
+258 silly addNameRange     '0.8.1',
+258 silly addNameRange     '0.8.2',
+258 silly addNameRange     '1.0.0-rc',
+258 silly addNameRange     '1.0.0-rc.2',
+258 silly addNameRange     '2.0.0-rc.1',
+258 silly addNameRange     '2.0.0-rc.3',
+258 silly addNameRange     '2.0.0-rc.4',
+258 silly addNameRange     '2.0.0-rc.5',
+258 silly addNameRange     '2.0.0-rc.6',
+258 silly addNameRange     '2.0.0',
+258 silly addNameRange     '1.0.0',
+258 silly addNameRange     '2.1.0',
+258 silly addNameRange     '2.1.1',
+258 silly addNameRange     '1.0.1',
+258 silly addNameRange     '2.1.2',
+258 silly addNameRange     '2.1.3',
+258 silly addNameRange     '2.2.0',
+258 silly addNameRange     '2.2.1',
+258 silly addNameRange     '2.3.0',
+258 silly addNameRange     '2.3.1',
+258 silly addNameRange     '2.4.0',
+258 silly addNameRange     '2.4.1',
+258 silly addNameRange     '2.5.0',
+258 silly addNameRange     '3.0.0',
+258 silly addNameRange     '3.0.1',
+258 silly addNameRange     '3.1.0',
+258 silly addNameRange     '3.1.1',
+258 silly addNameRange     '3.1.2',
+258 silly addNameRange     '3.1.3',
+258 silly addNameRange     '4.0.0-alpha.1',
+258 silly addNameRange     '3.2.0',
+258 silly addNameRange     '3.3.0',
+258 silly addNameRange     '4.0.0-beta.1',
+258 silly addNameRange     '3.4.0',
+258 silly addNameRange     '4.0.0-beta.2',
+258 silly addNameRange     '3.5.0',
+258 silly addNameRange     '4.0.0-beta.3',
+258 silly addNameRange     '3.5.1',
+258 silly addNameRange     '4.0.0-beta.4',
+258 silly addNameRange     '4.0.0-rc.1',
+258 silly addNameRange     '3.6.0',
+258 silly addNameRange     '4.0.0-rc.2',
+258 silly addNameRange     '3.6.1',
+258 silly addNameRange     '3.6.2',
+258 silly addNameRange     '4.0.0',
+258 silly addNameRange     '4.0.1',
+258 silly addNameRange     '4.0.2' ] ]
+259 silly addNamed vuex@4.0.2
+260 verbose addNamed "4.0.2" is a plain semver version for vuex
+261 verbose get https://registry.npmjs.org/moment not expired, no request
+262 silly addNameRange number 2 { name: 'moment', range: '>=2.29.1 <3.0.0', hasData: true }
+263 silly addNameRange versions [ 'moment',
+263 silly addNameRange   [ '1.0.0',
+263 silly addNameRange     '1.0.1',
+263 silly addNameRange     '1.1.0',
+263 silly addNameRange     '1.1.1',
+263 silly addNameRange     '1.2.0',
+263 silly addNameRange     '1.3.0',
+263 silly addNameRange     '1.4.0',
+263 silly addNameRange     '1.5.0',
+263 silly addNameRange     '1.5.1',
+263 silly addNameRange     '1.6.0',
+263 silly addNameRange     '1.6.1',
+263 silly addNameRange     '1.6.2',
+263 silly addNameRange     '1.7.0',
+263 silly addNameRange     '1.7.1',
+263 silly addNameRange     '1.7.2',
+263 silly addNameRange     '2.0.0',
+263 silly addNameRange     '2.1.0',
+263 silly addNameRange     '2.2.1',
+263 silly addNameRange     '2.3.0',
+263 silly addNameRange     '2.3.1',
+263 silly addNameRange     '2.4.0',
+263 silly addNameRange     '2.5.0',
+263 silly addNameRange     '2.5.1',
+263 silly addNameRange     '2.6.0',
+263 silly addNameRange     '2.7.0',
+263 silly addNameRange     '2.8.1',
+263 silly addNameRange     '2.8.2',
+263 silly addNameRange     '2.8.3',
+263 silly addNameRange     '2.8.4',
+263 silly addNameRange     '2.9.0',
+263 silly addNameRange     '2.10.2',
+263 silly addNameRange     '2.10.3',
+263 silly addNameRange     '2.10.5',
+263 silly addNameRange     '2.10.6',
+263 silly addNameRange     '2.11.0',
+263 silly addNameRange     '2.11.1',
+263 silly addNameRange     '2.11.2',
+263 silly addNameRange     '2.12.0',
+263 silly addNameRange     '2.13.0',
+263 silly addNameRange     '2.14.0',
+263 silly addNameRange     '2.14.1',
+263 silly addNameRange     '2.15.0',
+263 silly addNameRange     '2.15.1',
+263 silly addNameRange     '2.15.2',
+263 silly addNameRange     '2.16.0',
+263 silly addNameRange     '2.17.0',
+263 silly addNameRange     '2.17.1',
+263 silly addNameRange     '2.18.0',
+263 silly addNameRange     '2.18.1',
+263 silly addNameRange     '2.19.0',
+263 silly addNameRange     '2.19.1',
+263 silly addNameRange     '2.19.2',
+263 silly addNameRange     '2.19.3',
+263 silly addNameRange     '2.19.4',
+263 silly addNameRange     '2.20.0',
+263 silly addNameRange     '2.20.1',
+263 silly addNameRange     '2.21.0',
+263 silly addNameRange     '2.22.0',
+263 silly addNameRange     '2.22.1',
+263 silly addNameRange     '2.22.2',
+263 silly addNameRange     '2.23.0',
+263 silly addNameRange     '2.24.0',
+263 silly addNameRange     '2.25.0',
+263 silly addNameRange     '2.25.1',
+263 silly addNameRange     '2.25.2',
+263 silly addNameRange     '2.25.3',
+263 silly addNameRange     '2.26.0',
+263 silly addNameRange     '2.27.0',
+263 silly addNameRange     '2.28.0',
+263 silly addNameRange     '2.29.0',
+263 silly addNameRange     '2.29.1',
+263 silly addNameRange     '2.29.2',
+263 silly addNameRange     '2.29.3' ] ]
+264 silly addNamed moment@2.29.3
+265 verbose addNamed "2.29.3" is a plain semver version for moment
+266 verbose get https://registry.npmjs.org/core-js not expired, no request
+267 silly addNameRange number 2 { name: 'core-js', range: '>=3.6.5 <4.0.0', hasData: true }
+268 silly addNameRange versions [ 'core-js',
+268 silly addNameRange   [ '0.0.3',
+268 silly addNameRange     '0.0.4',
+268 silly addNameRange     '0.0.5',
+268 silly addNameRange     '0.0.7',
+268 silly addNameRange     '0.0.8',
+268 silly addNameRange     '0.0.9',
+268 silly addNameRange     '0.1.1',
+268 silly addNameRange     '0.1.2',
+268 silly addNameRange     '0.1.3',
+268 silly addNameRange     '0.1.4',
+268 silly addNameRange     '0.1.5',
+268 silly addNameRange     '0.2.0',
+268 silly addNameRange     '0.2.1',
+268 silly addNameRange     '0.2.2',
+268 silly addNameRange     '0.2.3',
+268 silly addNameRange     '0.2.4',
+268 silly addNameRange     '0.2.5',
+268 silly addNameRange     '0.3.0',
+268 silly addNameRange     '0.3.1',
+268 silly addNameRange     '0.3.2',
+268 silly addNameRange     '0.3.3',
+268 silly addNameRange     '0.4.0',
+268 silly addNameRange     '0.4.1',
+268 silly addNameRange     '0.4.2',
+268 silly addNameRange     '0.4.3',
+268 silly addNameRange     '0.4.4',
+268 silly addNameRange     '0.4.5',
+268 silly addNameRange     '0.4.6',
+268 silly addNameRange     '0.4.7',
+268 silly addNameRange     '0.4.8',
+268 silly addNameRange     '0.4.9',
+268 silly addNameRange     '0.4.10',
+268 silly addNameRange     '0.5.0',
+268 silly addNameRange     '0.5.1',
+268 silly addNameRange     '0.5.2',
+268 silly addNameRange     '0.5.3',
+268 silly addNameRange     '0.5.4',
+268 silly addNameRange     '0.6.0',
+268 silly addNameRange     '0.6.1',
+268 silly addNameRange     '0.7.0',
+268 silly addNameRange     '0.7.1',
+268 silly addNameRange     '0.7.2',
+268 silly addNameRange     '0.8.0',
+268 silly addNameRange     '0.8.1',
+268 silly addNameRange     '0.8.2',
+268 silly addNameRange     '0.8.3',
+268 silly addNameRange     '0.8.4',
+268 silly addNameRange     '0.9.0',
+268 silly addNameRange     '0.9.1',
+268 silly addNameRange     '0.9.2',
+268 silly addNameRange     '0.9.3',
+268 silly addNameRange     '0.9.4',
+268 silly addNameRange     '0.9.5',
+268 silly addNameRange     '0.9.6',
+268 silly addNameRange     '0.9.7',
+268 silly addNameRange     '0.9.8',
+268 silly addNameRange     '0.9.9',
+268 silly addNameRange     '0.9.10',
+268 silly addNameRange     '0.9.11',
+268 silly addNameRange     '0.9.12',
+268 silly addNameRange     '0.9.13',
+268 silly addNameRange     '0.9.14',
+268 silly addNameRange     '0.9.15',
+268 silly addNameRange     '0.9.16',
+268 silly addNameRange     '0.9.17',
+268 silly addNameRange     '0.9.18',
+268 silly addNameRange     '1.0.0',
+268 silly addNameRange     '1.0.1',
+268 silly addNameRange     '1.1.0',
+268 silly addNameRange     '1.1.1',
+268 silly addNameRange     '1.1.2',
+268 silly addNameRange     '1.1.3',
+268 silly addNameRange     '1.1.4',
+268 silly addNameRange     '1.2.0',
+268 silly addNameRange     '1.2.1',
+268 silly addNameRange     '1.2.2',
+268 silly addNameRange     '1.2.3',
+268 silly addNameRange     '1.2.4',
+268 silly addNameRange     '1.2.5',
+268 silly addNameRange     '1.2.6',
+268 silly addNameRange     '2.0.0-alpha',
+268 silly addNameRange     '2.0.0-beta',
+268 silly addNameRange     '2.0.0-beta.2',
+268 silly addNameRange     '2.0.0',
+268 silly addNameRange     '2.0.1',
+268 silly addNameRange     '2.0.2',
+268 silly addNameRange     '2.0.3',
+268 silly addNameRange     '2.1.0',
+268 silly addNameRange     '2.1.1',
+268 silly addNameRange     '2.1.2',
+268 silly addNameRange     '2.1.3',
+268 silly addNameRange     '2.1.4',
+268 silly addNameRange     '2.1.5',
+268 silly addNameRange     '2.2.0',
+268 silly addNameRange     '2.2.1',
+268 silly addNameRange     '2.2.2',
+268 silly addNameRange     '2.3.0',
+268 silly addNameRange     '2.4.0',
+268 silly addNameRange     '1.2.7',
+268 silly addNameRange     '2.4.1',
+268 silly addNameRange     ... 125 more items ] ]
+269 silly addNamed core-js@3.22.2
+270 verbose addNamed "3.22.2" is a plain semver version for core-js
+271 silly resolveWithNewModule @vue/compiler-sfc@3.2.33 checking installable status
+272 silly cache add args [ '@vue/compiler-sfc@^3.2.20', null ]
+273 verbose cache add spec @vue/compiler-sfc@^3.2.20
+274 silly cache add parsed spec Result {
+274 silly cache add   raw: '@vue/compiler-sfc@^3.2.20',
+274 silly cache add   scope: '@vue',
+274 silly cache add   name: '@vue/compiler-sfc',
+274 silly cache add   rawSpec: '^3.2.20',
+274 silly cache add   spec: '>=3.2.20 <4.0.0',
+274 silly cache add   type: 'range' }
+275 silly addNamed @vue/compiler-sfc@>=3.2.20 <4.0.0
+276 verbose addNamed ">=3.2.20 <4.0.0" is a valid semver range for @vue/compiler-sfc
+277 silly addNameRange { name: '@vue/compiler-sfc',
+277 silly addNameRange   range: '>=3.2.20 <4.0.0',
+277 silly addNameRange   hasData: false }
+278 silly mapToRegistry name @vue/compiler-sfc
+279 silly mapToRegistry scope (from package name) @vue
+280 verbose mapToRegistry no registry URL found in name for scope @vue
+281 silly mapToRegistry using default registry
+282 silly mapToRegistry registry https://registry.npmjs.org/
+283 silly mapToRegistry uri https://registry.npmjs.org/@vue%2fcompiler-sfc
+284 verbose addNameRange registry:https://registry.npmjs.org/@vue%2fcompiler-sfc not in flight; fetching
+285 verbose get https://registry.npmjs.org/vue-router not expired, no request
+286 silly addNameRange number 2 { name: 'vue-router', range: '>=4.0.8 <5.0.0', hasData: true }
+287 silly addNameRange versions [ 'vue-router',
+287 silly addNameRange   [ '0.4.0',
+287 silly addNameRange     '0.5.0',
+287 silly addNameRange     '0.5.1',
+287 silly addNameRange     '0.5.2',
+287 silly addNameRange     '0.6.0',
+287 silly addNameRange     '0.6.1',
+287 silly addNameRange     '0.6.2',
+287 silly addNameRange     '0.7.0',
+287 silly addNameRange     '0.7.1',
+287 silly addNameRange     '0.7.2',
+287 silly addNameRange     '0.7.3',
+287 silly addNameRange     '0.7.4',
+287 silly addNameRange     '0.7.5',
+287 silly addNameRange     '0.7.6',
+287 silly addNameRange     '0.7.7',
+287 silly addNameRange     '0.7.8',
+287 silly addNameRange     '0.7.9',
+287 silly addNameRange     '0.7.10',
+287 silly addNameRange     '0.7.11',
+287 silly addNameRange     '0.7.12',
+287 silly addNameRange     '0.7.13',
+287 silly addNameRange     '2.0.0-beta.1',
+287 silly addNameRange     '2.0.0-beta.2',
+287 silly addNameRange     '2.0.0-beta.3',
+287 silly addNameRange     '2.0.0-beta.4',
+287 silly addNameRange     '2.0.0-rc.1',
+287 silly addNameRange     '2.0.0-rc.2',
+287 silly addNameRange     '2.0.0-rc.3',
+287 silly addNameRange     '2.0.0-rc.4',
+287 silly addNameRange     '2.0.0-rc.5',
+287 silly addNameRange     '2.0.0-rc.6',
+287 silly addNameRange     '2.0.0-rc.7',
+287 silly addNameRange     '2.0.0',
+287 silly addNameRange     '2.0.1',
+287 silly addNameRange     '2.0.2',
+287 silly addNameRange     '2.0.3',
+287 silly addNameRange     '2.1.0',
+287 silly addNameRange     '2.1.1',
+287 silly addNameRange     '2.1.2',
+287 silly addNameRange     '2.1.3',
+287 silly addNameRange     '2.2.0',
+287 silly addNameRange     '2.2.1',
+287 silly addNameRange     '2.3.0',
+287 silly addNameRange     '2.3.1',
+287 silly addNameRange     '2.4.0',
+287 silly addNameRange     '2.5.0',
+287 silly addNameRange     '2.5.1',
+287 silly addNameRange     '2.5.2',
+287 silly addNameRange     '2.5.3',
+287 silly addNameRange     '2.6.0',
+287 silly addNameRange     '2.7.0',
+287 silly addNameRange     '2.8.0',
+287 silly addNameRange     '3.0.0',
+287 silly addNameRange     '2.8.1',
+287 silly addNameRange     '3.0.1',
+287 silly addNameRange     '3.0.2',
+287 silly addNameRange     '3.0.3',
+287 silly addNameRange     '3.0.4',
+287 silly addNameRange     '3.0.5',
+287 silly addNameRange     '3.0.6',
+287 silly addNameRange     '3.0.7',
+287 silly addNameRange     '3.1.0',
+287 silly addNameRange     '3.1.1',
+287 silly addNameRange     '3.1.2',
+287 silly addNameRange     '3.1.3',
+287 silly addNameRange     '3.1.4',
+287 silly addNameRange     '3.1.5',
+287 silly addNameRange     '4.0.0-alpha.0',
+287 silly addNameRange     '3.1.6',
+287 silly addNameRange     '4.0.0-alpha.1',
+287 silly addNameRange     '4.0.0-alpha.2',
+287 silly addNameRange     '4.0.0-alpha.3',
+287 silly addNameRange     '4.0.0-alpha.4',
+287 silly addNameRange     '4.0.0-alpha.5',
+287 silly addNameRange     '4.0.0-alpha.6',
+287 silly addNameRange     '4.0.0-alpha.7',
+287 silly addNameRange     '4.0.0-alpha.8',
+287 silly addNameRange     '4.0.0-alpha.9',
+287 silly addNameRange     '4.0.0-alpha.10',
+287 silly addNameRange     '4.0.0-alpha.11',
+287 silly addNameRange     '3.2.0',
+287 silly addNameRange     '4.0.0-alpha.12',
+287 silly addNameRange     '3.3.0',
+287 silly addNameRange     '3.3.1',
+287 silly addNameRange     '3.3.2',
+287 silly addNameRange     '3.3.3',
+287 silly addNameRange     '3.3.4',
+287 silly addNameRange     '4.0.0-alpha.13',
+287 silly addNameRange     '4.0.0-alpha.14',
+287 silly addNameRange     '4.0.0-beta.1',
+287 silly addNameRange     '4.0.0-beta.2',
+287 silly addNameRange     '4.0.0-beta.3',
+287 silly addNameRange     '4.0.0-beta.4',
+287 silly addNameRange     '4.0.0-beta.5',
+287 silly addNameRange     '4.0.0-beta.6',
+287 silly addNameRange     '3.4.0',
+287 silly addNameRange     '3.4.1',
+287 silly addNameRange     '3.4.2',
+287 silly addNameRange     '3.4.3',
+287 silly addNameRange     '4.0.0-beta.7',
+287 silly addNameRange     ... 38 more items ] ]
+288 silly addNamed vue-router@4.0.14
+289 verbose addNamed "4.0.14" is a plain semver version for vue-router
+290 verbose get https://registry.npmjs.org/postcss not expired, no request
+291 silly addNameRange number 2 { name: 'postcss', range: '>=8.3.0 <9.0.0', hasData: true }
+292 silly addNameRange versions [ 'postcss',
+292 silly addNameRange   [ '0.1.0',
+292 silly addNameRange     '0.2.0',
+292 silly addNameRange     '0.3.0',
+292 silly addNameRange     '0.3.1',
+292 silly addNameRange     '0.3.2',
+292 silly addNameRange     '0.3.3',
+292 silly addNameRange     '0.3.4',
+292 silly addNameRange     '0.3.5',
+292 silly addNameRange     '1.0.0',
+292 silly addNameRange     '2.0.0',
+292 silly addNameRange     '2.1.0',
+292 silly addNameRange     '2.1.1',
+292 silly addNameRange     '2.1.2',
+292 silly addNameRange     '2.2.0',
+292 silly addNameRange     '2.2.1',
+292 silly addNameRange     '2.2.2',
+292 silly addNameRange     '2.2.3',
+292 silly addNameRange     '2.2.4',
+292 silly addNameRange     '2.2.5',
+292 silly addNameRange     '2.2.6',
+292 silly addNameRange     '3.0.0',
+292 silly addNameRange     '3.0.1',
+292 silly addNameRange     '3.0.2',
+292 silly addNameRange     '3.0.3',
+292 silly addNameRange     '3.0.4',
+292 silly addNameRange     '3.0.5',
+292 silly addNameRange     '3.0.6',
+292 silly addNameRange     '3.0.7',
+292 silly addNameRange     '4.0.0',
+292 silly addNameRange     '4.0.1',
+292 silly addNameRange     '4.0.2',
+292 silly addNameRange     '4.0.3',
+292 silly addNameRange     '4.0.4',
+292 silly addNameRange     '4.0.5',
+292 silly addNameRange     '4.0.6',
+292 silly addNameRange     '4.1.0',
+292 silly addNameRange     '4.1.1',
+292 silly addNameRange     '4.1.2',
+292 silly addNameRange     '4.1.3',
+292 silly addNameRange     '4.1.4',
+292 silly addNameRange     '4.1.5',
+292 silly addNameRange     '4.1.6',
+292 silly addNameRange     '4.1.7',
+292 silly addNameRange     '4.1.8',
+292 silly addNameRange     '4.1.9',
+292 silly addNameRange     '4.1.10',
+292 silly addNameRange     '4.1.11',
+292 silly addNameRange     '4.1.12',
+292 silly addNameRange     '4.1.13',
+292 silly addNameRange     '4.1.14',
+292 silly addNameRange     '4.1.15',
+292 silly addNameRange     '4.1.16',
+292 silly addNameRange     '5.0.0',
+292 silly addNameRange     '5.0.1',
+292 silly addNameRange     '5.0.2',
+292 silly addNameRange     '5.0.3',
+292 silly addNameRange     '5.0.4',
+292 silly addNameRange     '5.0.5',
+292 silly addNameRange     '5.0.6',
+292 silly addNameRange     '5.0.7',
+292 silly addNameRange     '5.0.8',
+292 silly addNameRange     '5.0.9',
+292 silly addNameRange     '5.0.10',
+292 silly addNameRange     '5.0.11',
+292 silly addNameRange     '5.0.12',
+292 silly addNameRange     '5.0.13',
+292 silly addNameRange     '5.0.14',
+292 silly addNameRange     '5.0.15',
+292 silly addNameRange     '5.0.16',
+292 silly addNameRange     '5.0.17',
+292 silly addNameRange     '5.0.18',
+292 silly addNameRange     '5.0.19',
+292 silly addNameRange     '5.0.20',
+292 silly addNameRange     '5.0.21',
+292 silly addNameRange     '5.1.0',
+292 silly addNameRange     '5.1.1',
+292 silly addNameRange     '5.1.2',
+292 silly addNameRange     '5.2.0',
+292 silly addNameRange     '5.2.1',
+292 silly addNameRange     '5.2.2',
+292 silly addNameRange     '5.2.3',
+292 silly addNameRange     '5.2.4',
+292 silly addNameRange     '5.2.5',
+292 silly addNameRange     '5.2.6',
+292 silly addNameRange     '5.2.7',
+292 silly addNameRange     '5.2.8',
+292 silly addNameRange     '5.2.9',
+292 silly addNameRange     '5.2.10',
+292 silly addNameRange     '5.2.11',
+292 silly addNameRange     '5.2.12',
+292 silly addNameRange     '5.2.13',
+292 silly addNameRange     '5.2.14',
+292 silly addNameRange     '5.2.15',
+292 silly addNameRange     '5.2.16',
+292 silly addNameRange     '5.2.17',
+292 silly addNameRange     '6.0.0',
+292 silly addNameRange     '6.0.1',
+292 silly addNameRange     '6.0.2',
+292 silly addNameRange     '6.0.3',
+292 silly addNameRange     '6.0.4',
+292 silly addNameRange     ... 126 more items ] ]
+293 silly addNamed postcss@8.4.12
+294 verbose addNamed "8.4.12" is a plain semver version for postcss
+295 verbose get https://registry.npmjs.org/vue not expired, no request
+296 silly addNameRange number 2 { name: 'vue', range: '>=3.2.20 <4.0.0', hasData: true }
+297 silly addNameRange versions [ 'vue',
+297 silly addNameRange   [ '0.0.0',
+297 silly addNameRange     '0.6.0',
+297 silly addNameRange     '0.7.0',
+297 silly addNameRange     '0.7.1',
+297 silly addNameRange     '0.7.3',
+297 silly addNameRange     '0.7.4',
+297 silly addNameRange     '0.7.5',
+297 silly addNameRange     '0.7.6',
+297 silly addNameRange     '0.8.0',
+297 silly addNameRange     '0.8.1',
+297 silly addNameRange     '0.8.2',
+297 silly addNameRange     '0.8.3',
+297 silly addNameRange     '0.8.4',
+297 silly addNameRange     '0.8.6',
+297 silly addNameRange     '0.8.7',
+297 silly addNameRange     '0.8.8',
+297 silly addNameRange     '0.9.0',
+297 silly addNameRange     '0.9.1',
+297 silly addNameRange     '0.9.2',
+297 silly addNameRange     '0.9.3',
+297 silly addNameRange     '0.10.0',
+297 silly addNameRange     '0.10.1',
+297 silly addNameRange     '0.10.2',
+297 silly addNameRange     '0.10.3',
+297 silly addNameRange     '0.10.4',
+297 silly addNameRange     '0.10.5',
+297 silly addNameRange     '0.10.6',
+297 silly addNameRange     '0.11.0-rc',
+297 silly addNameRange     '0.11.0-rc2',
+297 silly addNameRange     '0.11.0-rc3',
+297 silly addNameRange     '0.11.0',
+297 silly addNameRange     '0.11.1',
+297 silly addNameRange     '0.11.2',
+297 silly addNameRange     '0.11.3',
+297 silly addNameRange     '0.11.4',
+297 silly addNameRange     '0.11.5',
+297 silly addNameRange     '0.11.6',
+297 silly addNameRange     '0.11.7',
+297 silly addNameRange     '0.11.8',
+297 silly addNameRange     '0.11.9',
+297 silly addNameRange     '0.11.10',
+297 silly addNameRange     '0.12.0-beta1',
+297 silly addNameRange     '0.12.0-beta2',
+297 silly addNameRange     '0.12.0-beta3',
+297 silly addNameRange     '0.12.0-beta4',
+297 silly addNameRange     '0.12.0-beta5',
+297 silly addNameRange     '0.12.0-rc',
+297 silly addNameRange     '0.12.0-rc2',
+297 silly addNameRange     '0.12.0',
+297 silly addNameRange     '0.12.0-csp',
+297 silly addNameRange     '0.12.1',
+297 silly addNameRange     '0.12.1-csp',
+297 silly addNameRange     '0.12.1-csp.1',
+297 silly addNameRange     '0.12.1-csp.2',
+297 silly addNameRange     '0.12.2',
+297 silly addNameRange     '0.12.3',
+297 silly addNameRange     '0.12.4',
+297 silly addNameRange     '0.12.5',
+297 silly addNameRange     '0.12.5-csp',
+297 silly addNameRange     '0.12.6',
+297 silly addNameRange     '0.12.6-csp',
+297 silly addNameRange     '0.12.7',
+297 silly addNameRange     '0.12.7-csp',
+297 silly addNameRange     '0.12.8',
+297 silly addNameRange     '0.12.8-csp',
+297 silly addNameRange     '0.12.9',
+297 silly addNameRange     '0.12.9-csp',
+297 silly addNameRange     '0.12.10',
+297 silly addNameRange     '0.12.10-csp',
+297 silly addNameRange     '0.12.11',
+297 silly addNameRange     '0.12.11-csp',
+297 silly addNameRange     '0.12.12',
+297 silly addNameRange     '0.12.12-csp',
+297 silly addNameRange     '1.0.0-alpha.1',
+297 silly addNameRange     '1.0.0-alpha.2',
+297 silly addNameRange     '0.12.13',
+297 silly addNameRange     '0.12.13-csp',
+297 silly addNameRange     '1.0.0-alpha.3',
+297 silly addNameRange     '0.12.14',
+297 silly addNameRange     '0.12.14-csp',
+297 silly addNameRange     '1.0.0-alpha.4',
+297 silly addNameRange     '0.12.15',
+297 silly addNameRange     '0.12.15-csp',
+297 silly addNameRange     '1.0.0-alpha.5',
+297 silly addNameRange     '1.0.0-beta.1',
+297 silly addNameRange     '0.12.16',
+297 silly addNameRange     '0.12.16-csp',
+297 silly addNameRange     '1.0.0-alpha.6',
+297 silly addNameRange     '1.0.0-beta.2',
+297 silly addNameRange     '1.0.0-alpha.7',
+297 silly addNameRange     '1.0.0-beta.3',
+297 silly addNameRange     '1.0.0-alpha.8',
+297 silly addNameRange     '1.0.0-beta.4',
+297 silly addNameRange     '1.0.0-rc.1',
+297 silly addNameRange     '1.0.0-rc.2-migration',
+297 silly addNameRange     '1.0.0-rc.2',
+297 silly addNameRange     '1.0.0-csp',
+297 silly addNameRange     '1.0.0-migration',
+297 silly addNameRange     '1.0.0',
+297 silly addNameRange     '1.0.1',
+297 silly addNameRange     ... 272 more items ] ]
+298 silly addNamed vue@3.2.33
+299 verbose addNamed "3.2.33" is a plain semver version for vue
+300 silly cache afterAdd vuex@4.0.2
+301 verbose afterAdd /root/.npm/vuex/4.0.2/package/package.json not in flight; writing
+302 silly cache afterAdd moment@2.29.3
+303 verbose afterAdd /root/.npm/moment/2.29.3/package/package.json not in flight; writing
+304 silly cache afterAdd core-js@3.22.2
+305 verbose afterAdd /root/.npm/core-js/3.22.2/package/package.json not in flight; writing
+306 verbose get https://registry.npmjs.org/axios not expired, no request
+307 silly addNameRange number 2 { name: 'axios', range: '>=0.21.4 <0.22.0', hasData: true }
+308 silly addNameRange versions [ 'axios',
+308 silly addNameRange   [ '0.1.0',
+308 silly addNameRange     '0.2.0',
+308 silly addNameRange     '0.2.1',
+308 silly addNameRange     '0.2.2',
+308 silly addNameRange     '0.3.0',
+308 silly addNameRange     '0.3.1',
+308 silly addNameRange     '0.4.0',
+308 silly addNameRange     '0.4.1',
+308 silly addNameRange     '0.4.2',
+308 silly addNameRange     '0.5.0',
+308 silly addNameRange     '0.5.1',
+308 silly addNameRange     '0.5.2',
+308 silly addNameRange     '0.5.3',
+308 silly addNameRange     '0.5.4',
+308 silly addNameRange     '0.6.0',
+308 silly addNameRange     '0.7.0',
+308 silly addNameRange     '0.8.0',
+308 silly addNameRange     '0.8.1',
+308 silly addNameRange     '0.9.0',
+308 silly addNameRange     '0.9.1',
+308 silly addNameRange     '0.10.0',
+308 silly addNameRange     '0.11.0',
+308 silly addNameRange     '0.11.1',
+308 silly addNameRange     '0.12.0',
+308 silly addNameRange     '0.13.0',
+308 silly addNameRange     '0.13.1',
+308 silly addNameRange     '0.14.0',
+308 silly addNameRange     '0.15.0',
+308 silly addNameRange     '0.15.1',
+308 silly addNameRange     '0.15.2',
+308 silly addNameRange     '0.15.3',
+308 silly addNameRange     '0.16.0',
+308 silly addNameRange     '0.16.1',
+308 silly addNameRange     '0.16.2',
+308 silly addNameRange     '0.17.0',
+308 silly addNameRange     '0.17.1',
+308 silly addNameRange     '0.18.0',
+308 silly addNameRange     '0.19.0-beta.1',
+308 silly addNameRange     '0.19.0',
+308 silly addNameRange     '0.18.1',
+308 silly addNameRange     '0.19.1',
+308 silly addNameRange     '0.19.2',
+308 silly addNameRange     '0.20.0-0',
+308 silly addNameRange     '0.20.0',
+308 silly addNameRange     '0.21.0',
+308 silly addNameRange     '0.21.1',
+308 silly addNameRange     '0.21.2',
+308 silly addNameRange     '0.21.3',
+308 silly addNameRange     '0.21.4',
+308 silly addNameRange     '0.22.0',
+308 silly addNameRange     '0.23.0',
+308 silly addNameRange     '0.24.0',
+308 silly addNameRange     '0.25.0',
+308 silly addNameRange     '0.26.0',
+308 silly addNameRange     '0.26.1',
+308 silly addNameRange     '0.27.0' ] ]
+309 silly addNamed axios@0.21.4
+310 verbose addNamed "0.21.4" is a plain semver version for axios
+311 verbose get https://registry.npmjs.org/@vue%2fcompiler-sfc not expired, no request
+312 silly addNameRange number 2 { name: '@vue/compiler-sfc',
+312 silly addNameRange   range: '>=3.2.20 <4.0.0',
+312 silly addNameRange   hasData: true }
+313 silly addNameRange versions [ '@vue/compiler-sfc',
+313 silly addNameRange   [ '3.0.0-alpha.0',
+313 silly addNameRange     '3.0.0-alpha.1',
+313 silly addNameRange     '3.0.0-alpha.2',
+313 silly addNameRange     '3.0.0-alpha.3',
+313 silly addNameRange     '3.0.0-alpha.4',
+313 silly addNameRange     '3.0.0-alpha.5',
+313 silly addNameRange     '3.0.0-alpha.6',
+313 silly addNameRange     '3.0.0-alpha.7',
+313 silly addNameRange     '3.0.0-alpha.8',
+313 silly addNameRange     '3.0.0-alpha.9',
+313 silly addNameRange     '3.0.0-alpha.10',
+313 silly addNameRange     '3.0.0-alpha.11',
+313 silly addNameRange     '3.0.0-alpha.12',
+313 silly addNameRange     '3.0.0-alpha.13',
+313 silly addNameRange     '3.0.0-beta.1',
+313 silly addNameRange     '3.0.0-beta.2',
+313 silly addNameRange     '3.0.0-beta.3',
+313 silly addNameRange     '3.0.0-beta.4',
+313 silly addNameRange     '3.0.0-beta.5',
+313 silly addNameRange     '3.0.0-beta.6',
+313 silly addNameRange     '3.0.0-beta.7',
+313 silly addNameRange     '3.0.0-beta.8',
+313 silly addNameRange     '3.0.0-beta.9',
+313 silly addNameRange     '3.0.0-beta.10',
+313 silly addNameRange     '3.0.0-beta.11',
+313 silly addNameRange     '3.0.0-beta.12',
+313 silly addNameRange     '3.0.0-beta.13',
+313 silly addNameRange     '3.0.0-beta.14',
+313 silly addNameRange     '3.0.0-beta.15',
+313 silly addNameRange     '3.0.0-beta.16',
+313 silly addNameRange     '3.0.0-beta.17',
+313 silly addNameRange     '3.0.0-beta.18',
+313 silly addNameRange     '3.0.0-beta.19',
+313 silly addNameRange     '3.0.0-beta.20',
+313 silly addNameRange     '3.0.0-beta.21',
+313 silly addNameRange     '3.0.0-beta.22',
+313 silly addNameRange     '3.0.0-beta.23',
+313 silly addNameRange     '3.0.0-beta.24',
+313 silly addNameRange     '3.0.0-rc.1',
+313 silly addNameRange     '3.0.0-rc.2',
+313 silly addNameRange     '3.0.0-rc.3',
+313 silly addNameRange     '3.0.0-rc.4',
+313 silly addNameRange     '3.0.0-rc.5',
+313 silly addNameRange     '3.0.0-rc.6',
+313 silly addNameRange     '3.0.0-rc.7',
+313 silly addNameRange     '3.0.0-rc.8',
+313 silly addNameRange     '3.0.0-rc.9',
+313 silly addNameRange     '3.0.0-rc.10',
+313 silly addNameRange     '3.0.0-rc.11',
+313 silly addNameRange     '3.0.0-rc.12',
+313 silly addNameRange     '3.0.0-rc.13',
+313 silly addNameRange     '3.0.0',
+313 silly addNameRange     '3.0.1',
+313 silly addNameRange     '3.0.2',
+313 silly addNameRange     '3.0.3',
+313 silly addNameRange     '3.0.4',
+313 silly addNameRange     '3.0.5',
+313 silly addNameRange     '3.0.6',
+313 silly addNameRange     '3.0.7',
+313 silly addNameRange     '3.0.8',
+313 silly addNameRange     '3.0.9',
+313 silly addNameRange     '3.0.10',
+313 silly addNameRange     '3.0.11',
+313 silly addNameRange     '3.1.0-beta.1',
+313 silly addNameRange     '3.1.0-beta.2',
+313 silly addNameRange     '3.1.0-beta.3',
+313 silly addNameRange     '3.1.0-beta.4',
+313 silly addNameRange     '3.1.0-beta.5',
+313 silly addNameRange     '3.1.0-beta.6',
+313 silly addNameRange     '3.1.0-beta.7',
+313 silly addNameRange     '3.1.0',
+313 silly addNameRange     '3.1.1',
+313 silly addNameRange     '3.1.2',
+313 silly addNameRange     '3.1.3',
+313 silly addNameRange     '3.1.4',
+313 silly addNameRange     '3.1.5',
+313 silly addNameRange     '3.2.0-beta.1',
+313 silly addNameRange     '3.2.0-beta.2',
+313 silly addNameRange     '3.2.0-beta.3',
+313 silly addNameRange     '3.2.0-beta.4',
+313 silly addNameRange     '3.2.0-beta.5',
+313 silly addNameRange     '3.2.0-beta.6',
+313 silly addNameRange     '3.2.0-beta.7',
+313 silly addNameRange     '3.2.0-beta.8',
+313 silly addNameRange     '3.2.0',
+313 silly addNameRange     '3.2.1',
+313 silly addNameRange     '3.2.2',
+313 silly addNameRange     '3.2.3',
+313 silly addNameRange     '3.2.4',
+313 silly addNameRange     '3.2.5',
+313 silly addNameRange     '3.2.6',
+313 silly addNameRange     '3.2.7',
+313 silly addNameRange     '3.2.8',
+313 silly addNameRange     '3.2.9',
+313 silly addNameRange     '3.2.10',
+313 silly addNameRange     '3.2.11',
+313 silly addNameRange     '3.2.12',
+313 silly addNameRange     '3.2.13',
+313 silly addNameRange     '3.2.14',
+313 silly addNameRange     '3.2.15',
+313 silly addNameRange     ... 18 more items ] ]
+314 silly addNamed @vue/compiler-sfc@3.2.33
+315 verbose addNamed "3.2.33" is a plain semver version for @vue/compiler-sfc
+316 silly cache afterAdd vue-router@4.0.14
+317 verbose afterAdd /root/.npm/vue-router/4.0.14/package/package.json not in flight; writing
+318 silly cache afterAdd postcss@8.4.12
+319 verbose afterAdd /root/.npm/postcss/8.4.12/package/package.json not in flight; writing
+320 silly cache afterAdd vue@3.2.33
+321 verbose afterAdd /root/.npm/vue/3.2.33/package/package.json not in flight; writing
+322 verbose afterAdd /root/.npm/vuex/4.0.2/package/package.json written
+323 verbose afterAdd /root/.npm/core-js/3.22.2/package/package.json written
+324 verbose afterAdd /root/.npm/moment/2.29.3/package/package.json written
+325 silly cache afterAdd axios@0.21.4
+326 verbose afterAdd /root/.npm/axios/0.21.4/package/package.json not in flight; writing
+327 verbose afterAdd /root/.npm/vue-router/4.0.14/package/package.json written
+328 verbose afterAdd /root/.npm/vue/3.2.33/package/package.json written
+329 verbose afterAdd /root/.npm/postcss/8.4.12/package/package.json written
+330 silly cache afterAdd @vue/compiler-sfc@3.2.33
+331 verbose afterAdd /root/.npm/@vue/compiler-sfc/3.2.33/package/package.json not in flight; writing
+332 verbose afterAdd /root/.npm/axios/0.21.4/package/package.json written
+333 verbose afterAdd /root/.npm/@vue/compiler-sfc/3.2.33/package/package.json written
+334 http 304 https://registry.npmjs.org/echarts
+335 verbose headers { date: 'Tue, 26 Apr 2022 06:51:19 GMT',
+335 verbose headers   connection: 'keep-alive',
+335 verbose headers   'cf-ray': '701d63a06f543d06-HKG',
+335 verbose headers   'cache-control': 'public, max-age=300',
+335 verbose headers   etag: '"040346fe948bff54d4d1befea2c3b2a6"',
+335 verbose headers   'last-modified': 'Fri, 01 Apr 2022 04:46:44 GMT',
+335 verbose headers   vary: 'Accept-Encoding',
+335 verbose headers   'cf-cache-status': 'REVALIDATED',
+335 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+335 verbose headers   'x-amz-replication-status': 'PENDING',
+335 verbose headers   server: 'cloudflare' }
+336 silly get cb [ 304,
+336 silly get   { date: 'Tue, 26 Apr 2022 06:51:19 GMT',
+336 silly get     connection: 'keep-alive',
+336 silly get     'cf-ray': '701d63a06f543d06-HKG',
+336 silly get     'cache-control': 'public, max-age=300',
+336 silly get     etag: '"040346fe948bff54d4d1befea2c3b2a6"',
+336 silly get     'last-modified': 'Fri, 01 Apr 2022 04:46:44 GMT',
+336 silly get     vary: 'Accept-Encoding',
+336 silly get     'cf-cache-status': 'REVALIDATED',
+336 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+336 silly get     'x-amz-replication-status': 'PENDING',
+336 silly get     server: 'cloudflare' } ]
+337 verbose etag https://registry.npmjs.org/echarts from cache
+338 verbose get saving echarts to /root/.npm/registry.npmjs.org/echarts/.cache.json
+339 http 304 https://registry.npmjs.org/element-plus
+340 verbose headers { date: 'Tue, 26 Apr 2022 06:51:19 GMT',
+340 verbose headers   connection: 'keep-alive',
+340 verbose headers   'cf-ray': '701d63a06db76e3d-HKG',
+340 verbose headers   'cache-control': 'public, max-age=300',
+340 verbose headers   etag: '"83058ce2d02fc8ef32b567bbaaf8ff6b"',
+340 verbose headers   'last-modified': 'Mon, 25 Apr 2022 15:52:32 GMT',
+340 verbose headers   vary: 'Accept-Encoding',
+340 verbose headers   'cf-cache-status': 'REVALIDATED',
+340 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+340 verbose headers   'x-amz-replication-status': 'COMPLETED',
+340 verbose headers   server: 'cloudflare' }
+341 silly get cb [ 304,
+341 silly get   { date: 'Tue, 26 Apr 2022 06:51:19 GMT',
+341 silly get     connection: 'keep-alive',
+341 silly get     'cf-ray': '701d63a06db76e3d-HKG',
+341 silly get     'cache-control': 'public, max-age=300',
+341 silly get     etag: '"83058ce2d02fc8ef32b567bbaaf8ff6b"',
+341 silly get     'last-modified': 'Mon, 25 Apr 2022 15:52:32 GMT',
+341 silly get     vary: 'Accept-Encoding',
+341 silly get     'cf-cache-status': 'REVALIDATED',
+341 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+341 silly get     'x-amz-replication-status': 'COMPLETED',
+341 silly get     server: 'cloudflare' } ]
+342 verbose etag https://registry.npmjs.org/element-plus from cache
+343 verbose get saving element-plus to /root/.npm/registry.npmjs.org/element-plus/.cache.json
+344 silly resolveWithNewModule echarts@5.3.2 checking installable status
+345 silly cache add args [ 'echarts@^5.2.1', null ]
+346 verbose cache add spec echarts@^5.2.1
+347 silly cache add parsed spec Result {
+347 silly cache add   raw: 'echarts@^5.2.1',
+347 silly cache add   scope: null,
+347 silly cache add   name: 'echarts',
+347 silly cache add   rawSpec: '^5.2.1',
+347 silly cache add   spec: '>=5.2.1 <6.0.0',
+347 silly cache add   type: 'range' }
+348 silly addNamed echarts@>=5.2.1 <6.0.0
+349 verbose addNamed ">=5.2.1 <6.0.0" is a valid semver range for echarts
+350 silly addNameRange { name: 'echarts', range: '>=5.2.1 <6.0.0', hasData: false }
+351 silly mapToRegistry name echarts
+352 silly mapToRegistry using default registry
+353 silly mapToRegistry registry https://registry.npmjs.org/
+354 silly mapToRegistry uri https://registry.npmjs.org/echarts
+355 verbose addNameRange registry:https://registry.npmjs.org/echarts not in flight; fetching
+356 verbose get https://registry.npmjs.org/echarts not expired, no request
+357 silly addNameRange number 2 { name: 'echarts', range: '>=5.2.1 <6.0.0', hasData: true }
+358 silly addNameRange versions [ 'echarts',
+358 silly addNameRange   [ '2.2.7-beta7',
+358 silly addNameRange     '2.2.1-amd-beta1',
+358 silly addNameRange     '2.2.7-amd-beta1',
+358 silly addNameRange     '2.2.7-amd-beta2',
+358 silly addNameRange     '2.2.8',
+358 silly addNameRange     '3.0.0-beta1',
+358 silly addNameRange     '3.0.0-beta2',
+358 silly addNameRange     '3.0.0-beta3',
+358 silly addNameRange     '3.0.0-beta4',
+358 silly addNameRange     '3.0.0',
+358 silly addNameRange     '3.0.1',
+358 silly addNameRange     '3.0.2-beta1',
+358 silly addNameRange     '3.0.2-beta2',
+358 silly addNameRange     '3.0.2-beta3',
+358 silly addNameRange     '3.1.1',
+358 silly addNameRange     '3.1.2',
+358 silly addNameRange     '3.1.3',
+358 silly addNameRange     '3.1.4',
+358 silly addNameRange     '3.1.5',
+358 silly addNameRange     '3.1.6',
+358 silly addNameRange     '3.1.7',
+358 silly addNameRange     '3.1.8',
+358 silly addNameRange     '3.1.9',
+358 silly addNameRange     '3.1.10',
+358 silly addNameRange     '3.2.0',
+358 silly addNameRange     '3.2.1',
+358 silly addNameRange     '3.2.2',
+358 silly addNameRange     '3.2.3',
+358 silly addNameRange     '3.3.0',
+358 silly addNameRange     '3.3.1',
+358 silly addNameRange     '3.3.2',
+358 silly addNameRange     '3.4.0',
+358 silly addNameRange     '3.5.0',
+358 silly addNameRange     '3.5.1',
+358 silly addNameRange     '3.5.2',
+358 silly addNameRange     '3.5.3',
+358 silly addNameRange     '3.5.4',
+358 silly addNameRange     '3.6.0',
+358 silly addNameRange     '3.6.1',
+358 silly addNameRange     '3.6.2',
+358 silly addNameRange     '3.7.0',
+358 silly addNameRange     '3.7.1',
+358 silly addNameRange     '3.7.2',
+358 silly addNameRange     '3.8.0',
+358 silly addNameRange     '3.8.1',
+358 silly addNameRange     '3.8.2',
+358 silly addNameRange     '3.8.3',
+358 silly addNameRange     '3.8.4',
+358 silly addNameRange     '3.8.5',
+358 silly addNameRange     '4.0.0',
+358 silly addNameRange     '4.0.1',
+358 silly addNameRange     '4.0.2',
+358 silly addNameRange     '4.0.3',
+358 silly addNameRange     '4.0.4',
+358 silly addNameRange     '4.1.0',
+358 silly addNameRange     '4.2.0-rc.1',
+358 silly addNameRange     '4.2.0-rc.2',
+358 silly addNameRange     '4.2.1-rc.1',
+358 silly addNameRange     '4.2.1-rc.2',
+358 silly addNameRange     '4.2.1-rc.3',
+358 silly addNameRange     '4.2.1',
+358 silly addNameRange     '4.3.0-rc.1',
+358 silly addNameRange     '4.3.0-rc.2',
+358 silly addNameRange     '4.3.0',
+358 silly addNameRange     '4.4.0-rc.1',
+358 silly addNameRange     '4.4.0',
+358 silly addNameRange     '4.5.0-rc.1',
+358 silly addNameRange     '4.5.0-rc.2',
+358 silly addNameRange     '4.5.0',
+358 silly addNameRange     '4.6.0',
+358 silly addNameRange     '4.7.0',
+358 silly addNameRange     '4.8.0',
+358 silly addNameRange     '5.0.0-alpha.1',
+358 silly addNameRange     '5.0.0-alpha.2',
+358 silly addNameRange     '4.9.0',
+358 silly addNameRange     '5.0.0-beta.1',
+358 silly addNameRange     '5.0.0-beta.2',
+358 silly addNameRange     '5.0.0-rc.1',
+358 silly addNameRange     '5.0.0',
+358 silly addNameRange     '5.0.1',
+358 silly addNameRange     '5.0.2',
+358 silly addNameRange     '5.1.0',
+358 silly addNameRange     '5.1.1',
+358 silly addNameRange     '5.1.2',
+358 silly addNameRange     '5.2.0',
+358 silly addNameRange     '5.2.1',
+358 silly addNameRange     '5.2.2',
+358 silly addNameRange     '5.3.0-rc.1',
+358 silly addNameRange     '5.3.0',
+358 silly addNameRange     '5.3.1-rc.1',
+358 silly addNameRange     '5.3.1',
+358 silly addNameRange     '5.3.2-rc.1',
+358 silly addNameRange     '5.3.2' ] ]
+359 silly addNamed echarts@5.3.2
+360 verbose addNamed "5.3.2" is a plain semver version for echarts
+361 silly resolveWithNewModule element-plus@1.1.0-beta.24 checking installable status
+362 silly cache add args [ 'element-plus@^1.1.0-beta.20', null ]
+363 verbose cache add spec element-plus@^1.1.0-beta.20
+364 silly cache add parsed spec Result {
+364 silly cache add   raw: 'element-plus@^1.1.0-beta.20',
+364 silly cache add   scope: null,
+364 silly cache add   name: 'element-plus',
+364 silly cache add   rawSpec: '^1.1.0-beta.20',
+364 silly cache add   spec: '>=1.1.0-beta.20 <2.0.0',
+364 silly cache add   type: 'range' }
+365 silly addNamed element-plus@>=1.1.0-beta.20 <2.0.0
+366 verbose addNamed ">=1.1.0-beta.20 <2.0.0" is a valid semver range for element-plus
+367 silly addNameRange { name: 'element-plus',
+367 silly addNameRange   range: '>=1.1.0-beta.20 <2.0.0',
+367 silly addNameRange   hasData: false }
+368 silly mapToRegistry name element-plus
+369 silly mapToRegistry using default registry
+370 silly mapToRegistry registry https://registry.npmjs.org/
+371 silly mapToRegistry uri https://registry.npmjs.org/element-plus
+372 verbose addNameRange registry:https://registry.npmjs.org/element-plus not in flight; fetching
+373 silly cache afterAdd echarts@5.3.2
+374 verbose afterAdd /root/.npm/echarts/5.3.2/package/package.json not in flight; writing
+375 verbose get https://registry.npmjs.org/element-plus not expired, no request
+376 silly addNameRange number 2 { name: 'element-plus',
+376 silly addNameRange   range: '>=1.1.0-beta.20 <2.0.0',
+376 silly addNameRange   hasData: true }
+377 silly addNameRange versions [ 'element-plus',
+377 silly addNameRange   [ '1.0.0',
+377 silly addNameRange     '1.0.1-alpha.0',
+377 silly addNameRange     '1.0.1-alpha.1',
+377 silly addNameRange     '1.0.1-alpha.2',
+377 silly addNameRange     '1.0.1-alpha.3',
+377 silly addNameRange     '1.0.1-alpha.4',
+377 silly addNameRange     '1.0.1-alpha.5',
+377 silly addNameRange     '1.0.1-alpha.6',
+377 silly addNameRange     '1.0.1-alpha.7',
+377 silly addNameRange     '1.0.1-alpha.8',
+377 silly addNameRange     '1.0.1-alpha.9',
+377 silly addNameRange     '1.0.1-alpha.10',
+377 silly addNameRange     '1.0.1-alpha.11',
+377 silly addNameRange     '1.0.1-alpha.12',
+377 silly addNameRange     '1.0.1-alpha.13',
+377 silly addNameRange     '1.0.1-alpha.14',
+377 silly addNameRange     '1.0.1-alpha.15',
+377 silly addNameRange     '1.0.1-alpha.16',
+377 silly addNameRange     '1.0.1-alpha.17',
+377 silly addNameRange     '1.0.1-alpha.18',
+377 silly addNameRange     '1.0.1-alpha.19',
+377 silly addNameRange     '1.0.1-alpha.20',
+377 silly addNameRange     '1.0.1-alpha.21',
+377 silly addNameRange     '1.0.1-alpha.22',
+377 silly addNameRange     '1.0.1-alpha.23',
+377 silly addNameRange     '1.0.1-beta.0',
+377 silly addNameRange     '1.0.1-beta.1',
+377 silly addNameRange     '1.0.1-beta.2',
+377 silly addNameRange     '1.0.1-beta.3',
+377 silly addNameRange     '1.0.1-beta.4',
+377 silly addNameRange     '1.0.1-beta.5',
+377 silly addNameRange     '1.0.1-beta.6',
+377 silly addNameRange     '1.0.1-beta.7',
+377 silly addNameRange     '1.0.1-beta.8',
+377 silly addNameRange     '1.0.1-beta.9',
+377 silly addNameRange     '1.0.1-beta.10',
+377 silly addNameRange     '1.0.1-beta.11',
+377 silly addNameRange     '1.0.2-beta.12',
+377 silly addNameRange     '1.0.1-beta.13',
+377 silly addNameRange     '1.0.1-beta.14',
+377 silly addNameRange     '1.0.1-beta.15',
+377 silly addNameRange     '1.0.1-beta.16',
+377 silly addNameRange     '1.0.1-beta.17',
+377 silly addNameRange     '1.0.1-beta.18',
+377 silly addNameRange     '1.0.1-beta.19',
+377 silly addNameRange     '1.0.1-beta.20',
+377 silly addNameRange     '1.0.1-beta.21',
+377 silly addNameRange     '1.0.1-beta.22',
+377 silly addNameRange     '1.0.1-beta.23',
+377 silly addNameRange     '1.0.1-beta.24',
+377 silly addNameRange     '1.0.1-beta.25',
+377 silly addNameRange     '1.0.1-beta.26',
+377 silly addNameRange     '1.0.1-beta.27',
+377 silly addNameRange     '1.0.2-beta.28',
+377 silly addNameRange     '1.0.2-beta.29',
+377 silly addNameRange     '1.0.2-beta.30',
+377 silly addNameRange     '1.0.2-beta.31',
+377 silly addNameRange     '1.0.2-beta.32',
+377 silly addNameRange     '1.0.2-beta.33',
+377 silly addNameRange     '1.0.2-beta.34',
+377 silly addNameRange     '1.0.2-beta.35',
+377 silly addNameRange     '1.0.2-beta.36',
+377 silly addNameRange     '1.0.2-beta.37',
+377 silly addNameRange     '1.0.2-beta.38',
+377 silly addNameRange     '1.0.2-beta.39',
+377 silly addNameRange     '1.0.2-beta.40',
+377 silly addNameRange     '1.0.2-beta.41',
+377 silly addNameRange     '1.0.2-beta.42',
+377 silly addNameRange     '1.0.2-beta.43',
+377 silly addNameRange     '1.0.2-beta.44',
+377 silly addNameRange     '1.0.2-beta.45',
+377 silly addNameRange     '1.0.2-beta.46',
+377 silly addNameRange     '1.0.2-beta.47',
+377 silly addNameRange     '1.0.2-beta.48',
+377 silly addNameRange     '1.0.2-beta.49',
+377 silly addNameRange     '1.0.2-beta.50',
+377 silly addNameRange     '1.0.2-beta.51',
+377 silly addNameRange     '1.0.2-beta.52',
+377 silly addNameRange     '1.0.2-beta.53',
+377 silly addNameRange     '1.0.2-beta.54',
+377 silly addNameRange     '1.0.2-beta.55',
+377 silly addNameRange     '1.0.2-beta.56',
+377 silly addNameRange     '1.0.2-beta.57',
+377 silly addNameRange     '1.0.2-beta.58',
+377 silly addNameRange     '1.0.2-beta.59',
+377 silly addNameRange     '1.0.2-beta.60',
+377 silly addNameRange     '1.0.2-beta.61',
+377 silly addNameRange     '1.0.2-beta.62',
+377 silly addNameRange     '1.0.2-beta.63',
+377 silly addNameRange     '1.0.2-beta.64',
+377 silly addNameRange     '1.0.2-beta.65',
+377 silly addNameRange     '1.0.2-beta.66',
+377 silly addNameRange     '1.0.2-beta.67',
+377 silly addNameRange     '1.0.2-beta.68',
+377 silly addNameRange     '1.0.2-beta.69',
+377 silly addNameRange     '1.0.2-beta.70',
+377 silly addNameRange     '1.0.2-beta.71',
+377 silly addNameRange     '1.1.0-beta.1',
+377 silly addNameRange     '1.1.0-beta.2',
+377 silly addNameRange     '1.1.0-beta.3',
+377 silly addNameRange     ... 56 more items ] ]
+378 silly addNamed element-plus@1.1.0-beta.24
+379 verbose addNamed "1.1.0-beta.24" is a plain semver version for element-plus
+380 warn deprecated element-plus@1.1.0-beta.24: Version no longer supported. Please upgrade to @latest
+381 verbose afterAdd /root/.npm/echarts/5.3.2/package/package.json written
+382 silly cache afterAdd element-plus@1.1.0-beta.24
+383 verbose afterAdd /root/.npm/element-plus/1.1.0-beta.24/package/package.json not in flight; writing
+384 verbose afterAdd /root/.npm/element-plus/1.1.0-beta.24/package/package.json written
+385 silly fetchNamedPackageData @babel/parser
+386 silly mapToRegistry name @babel/parser
+387 silly mapToRegistry scope (from package name) @babel
+388 verbose mapToRegistry no registry URL found in name for scope @babel
+389 silly mapToRegistry using default registry
+390 silly mapToRegistry registry https://registry.npmjs.org/
+391 silly mapToRegistry uri https://registry.npmjs.org/@babel%2fparser
+392 silly fetchNamedPackageData @vue/compiler-core
+393 silly mapToRegistry name @vue/compiler-core
+394 silly mapToRegistry scope (from package name) @vue
+395 verbose mapToRegistry no registry URL found in name for scope @vue
+396 silly mapToRegistry using default registry
+397 silly mapToRegistry registry https://registry.npmjs.org/
+398 silly mapToRegistry uri https://registry.npmjs.org/@vue%2fcompiler-core
+399 silly fetchNamedPackageData @vue/compiler-dom
+400 silly mapToRegistry name @vue/compiler-dom
+401 silly mapToRegistry scope (from package name) @vue
+402 verbose mapToRegistry no registry URL found in name for scope @vue
+403 silly mapToRegistry using default registry
+404 silly mapToRegistry registry https://registry.npmjs.org/
+405 silly mapToRegistry uri https://registry.npmjs.org/@vue%2fcompiler-dom
+406 silly fetchNamedPackageData @vue/compiler-ssr
+407 silly mapToRegistry name @vue/compiler-ssr
+408 silly mapToRegistry scope (from package name) @vue
+409 verbose mapToRegistry no registry URL found in name for scope @vue
+410 silly mapToRegistry using default registry
+411 silly mapToRegistry registry https://registry.npmjs.org/
+412 silly mapToRegistry uri https://registry.npmjs.org/@vue%2fcompiler-ssr
+413 silly fetchNamedPackageData @vue/reactivity-transform
+414 silly mapToRegistry name @vue/reactivity-transform
+415 silly mapToRegistry scope (from package name) @vue
+416 verbose mapToRegistry no registry URL found in name for scope @vue
+417 silly mapToRegistry using default registry
+418 silly mapToRegistry registry https://registry.npmjs.org/
+419 silly mapToRegistry uri https://registry.npmjs.org/@vue%2freactivity-transform
+420 silly fetchNamedPackageData @vue/shared
+421 silly mapToRegistry name @vue/shared
+422 silly mapToRegistry scope (from package name) @vue
+423 verbose mapToRegistry no registry URL found in name for scope @vue
+424 silly mapToRegistry using default registry
+425 silly mapToRegistry registry https://registry.npmjs.org/
+426 silly mapToRegistry uri https://registry.npmjs.org/@vue%2fshared
+427 silly fetchNamedPackageData estree-walker
+428 silly mapToRegistry name estree-walker
+429 silly mapToRegistry using default registry
+430 silly mapToRegistry registry https://registry.npmjs.org/
+431 silly mapToRegistry uri https://registry.npmjs.org/estree-walker
+432 silly fetchNamedPackageData magic-string
+433 silly mapToRegistry name magic-string
+434 silly mapToRegistry using default registry
+435 silly mapToRegistry registry https://registry.npmjs.org/
+436 silly mapToRegistry uri https://registry.npmjs.org/magic-string
+437 silly fetchNamedPackageData source-map
+438 silly mapToRegistry name source-map
+439 silly mapToRegistry using default registry
+440 silly mapToRegistry registry https://registry.npmjs.org/
+441 silly mapToRegistry uri https://registry.npmjs.org/source-map
+442 verbose request uri https://registry.npmjs.org/@vue%2freactivity-transform
+443 verbose request no auth needed
+444 info attempt registry request try #1 at 2:51:18 PM
+445 verbose etag W/"d51aec676bcf7ac28843871b10195779"
+446 verbose lastModified Thu, 14 Apr 2022 10:14:47 GMT
+447 http request GET https://registry.npmjs.org/@vue%2freactivity-transform
+448 verbose request uri https://registry.npmjs.org/@babel%2fparser
+449 verbose request no auth needed
+450 info attempt registry request try #1 at 2:51:18 PM
+451 verbose etag W/"853b4b10188784988eaa052e396b73d8"
+452 verbose lastModified Wed, 06 Apr 2022 15:55:23 GMT
+453 http request GET https://registry.npmjs.org/@babel%2fparser
+454 verbose request uri https://registry.npmjs.org/@vue%2fcompiler-ssr
+455 verbose request no auth needed
+456 info attempt registry request try #1 at 2:51:18 PM
+457 verbose etag W/"27dd8670a2bdeb30d0a1f7b4d736e794"
+458 verbose lastModified Thu, 14 Apr 2022 10:14:44 GMT
+459 http request GET https://registry.npmjs.org/@vue%2fcompiler-ssr
+460 verbose request uri https://registry.npmjs.org/@vue%2fcompiler-core
+461 verbose request no auth needed
+462 info attempt registry request try #1 at 2:51:18 PM
+463 verbose etag W/"309f43f6512220914d94e5a6408b6876"
+464 verbose lastModified Thu, 14 Apr 2022 10:14:39 GMT
+465 http request GET https://registry.npmjs.org/@vue%2fcompiler-core
+466 verbose request uri https://registry.npmjs.org/estree-walker
+467 verbose request no auth needed
+468 info attempt registry request try #1 at 2:51:18 PM
+469 verbose etag W/"1702eb35a540d6bf9e169d5fb71a90c0"
+470 verbose lastModified Mon, 20 Dec 2021 15:54:56 GMT
+471 http request GET https://registry.npmjs.org/estree-walker
+472 verbose request uri https://registry.npmjs.org/@vue%2fcompiler-dom
+473 verbose request no auth needed
+474 info attempt registry request try #1 at 2:51:18 PM
+475 verbose etag W/"0e267a31585e4ca4fc88ac119266aebb"
+476 verbose lastModified Thu, 14 Apr 2022 10:14:41 GMT
+477 http request GET https://registry.npmjs.org/@vue%2fcompiler-dom
+478 verbose request uri https://registry.npmjs.org/source-map
+479 verbose request no auth needed
+480 info attempt registry request try #1 at 2:51:18 PM
+481 verbose etag W/"c1024dff6e66ea256fbd8430cfe82f84"
+482 verbose lastModified Wed, 09 Feb 2022 23:46:00 GMT
+483 http request GET https://registry.npmjs.org/source-map
+484 verbose request uri https://registry.npmjs.org/@vue%2fshared
+485 verbose request no auth needed
+486 info attempt registry request try #1 at 2:51:18 PM
+487 verbose etag W/"a41d6e6355ceed3d75e98721ddaa0e22"
+488 verbose lastModified Thu, 14 Apr 2022 10:14:54 GMT
+489 http request GET https://registry.npmjs.org/@vue%2fshared
+490 verbose request uri https://registry.npmjs.org/magic-string
+491 verbose request no auth needed
+492 info attempt registry request try #1 at 2:51:18 PM
+493 verbose etag W/"a8ccf39eb782ddf1b54acec45b798446"
+494 verbose lastModified Thu, 03 Mar 2022 09:23:47 GMT
+495 http request GET https://registry.npmjs.org/magic-string
+496 http 304 https://registry.npmjs.org/estree-walker
+497 verbose headers { date: 'Tue, 26 Apr 2022 06:51:20 GMT',
+497 verbose headers   connection: 'keep-alive',
+497 verbose headers   'cf-ray': '701d63ab1abd6e2b-HKG',
+497 verbose headers   age: '147',
+497 verbose headers   'cache-control': 'public, max-age=300',
+497 verbose headers   etag: '"1702eb35a540d6bf9e169d5fb71a90c0"',
+497 verbose headers   'last-modified': 'Mon, 20 Dec 2021 15:54:56 GMT',
+497 verbose headers   vary: 'Accept-Encoding',
+497 verbose headers   'cf-cache-status': 'HIT',
+497 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+497 verbose headers   'x-amz-replication-status': 'COMPLETED',
+497 verbose headers   server: 'cloudflare' }
+498 silly get cb [ 304,
+498 silly get   { date: 'Tue, 26 Apr 2022 06:51:20 GMT',
+498 silly get     connection: 'keep-alive',
+498 silly get     'cf-ray': '701d63ab1abd6e2b-HKG',
+498 silly get     age: '147',
+498 silly get     'cache-control': 'public, max-age=300',
+498 silly get     etag: '"1702eb35a540d6bf9e169d5fb71a90c0"',
+498 silly get     'last-modified': 'Mon, 20 Dec 2021 15:54:56 GMT',
+498 silly get     vary: 'Accept-Encoding',
+498 silly get     'cf-cache-status': 'HIT',
+498 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+498 silly get     'x-amz-replication-status': 'COMPLETED',
+498 silly get     server: 'cloudflare' } ]
+499 verbose etag https://registry.npmjs.org/estree-walker from cache
+500 verbose get saving estree-walker to /root/.npm/registry.npmjs.org/estree-walker/.cache.json
+501 http 304 https://registry.npmjs.org/@babel%2fparser
+502 verbose headers { date: 'Tue, 26 Apr 2022 06:51:20 GMT',
+502 verbose headers   connection: 'keep-alive',
+502 verbose headers   'cf-ray': '701d63ab0e656e37-HKG',
+502 verbose headers   age: '233',
+502 verbose headers   'cache-control': 'public, max-age=300',
+502 verbose headers   etag: '"853b4b10188784988eaa052e396b73d8"',
+502 verbose headers   'last-modified': 'Wed, 06 Apr 2022 15:55:23 GMT',
+502 verbose headers   vary: 'Accept-Encoding',
+502 verbose headers   'cf-cache-status': 'HIT',
+502 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+502 verbose headers   'x-amz-replication-status': 'COMPLETED',
+502 verbose headers   server: 'cloudflare' }
+503 silly get cb [ 304,
+503 silly get   { date: 'Tue, 26 Apr 2022 06:51:20 GMT',
+503 silly get     connection: 'keep-alive',
+503 silly get     'cf-ray': '701d63ab0e656e37-HKG',
+503 silly get     age: '233',
+503 silly get     'cache-control': 'public, max-age=300',
+503 silly get     etag: '"853b4b10188784988eaa052e396b73d8"',
+503 silly get     'last-modified': 'Wed, 06 Apr 2022 15:55:23 GMT',
+503 silly get     vary: 'Accept-Encoding',
+503 silly get     'cf-cache-status': 'HIT',
+503 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+503 silly get     'x-amz-replication-status': 'COMPLETED',
+503 silly get     server: 'cloudflare' } ]
+504 verbose etag https://registry.npmjs.org/@babel%2fparser from cache
+505 verbose get saving @babel/parser to /root/.npm/registry.npmjs.org/_40babel_252fparser/.cache.json
+506 verbose stack Error: Missing required argument #1
+506 verbose stack     at andLogAndFinish (/usr/share/npm/lib/fetch-package-metadata.js:31:3)
+506 verbose stack     at fetchPackageMetadata (/usr/share/npm/lib/fetch-package-metadata.js:51:22)
+506 verbose stack     at resolveWithNewModule (/usr/share/npm/lib/install/deps.js:456:12)
+506 verbose stack     at /usr/share/npm/lib/install/deps.js:457:7
+506 verbose stack     at /usr/share/npm/node_modules/iferr/index.js:13:50
+506 verbose stack     at /usr/share/npm/lib/fetch-package-metadata.js:37:12
+506 verbose stack     at addRequestedAndFinish (/usr/share/npm/lib/fetch-package-metadata.js:82:5)
+506 verbose stack     at returnAndAddMetadata (/usr/share/npm/lib/fetch-package-metadata.js:117:7)
+506 verbose stack     at pickVersionFromRegistryDocument (/usr/share/npm/lib/fetch-package-metadata.js:134:20)
+506 verbose stack     at /usr/share/npm/node_modules/iferr/index.js:13:50
+507 verbose cwd /root/workspace/mall/web
+508 error Linux 3.13.0-32-generic
+509 error argv "/usr/bin/node" "/usr/bin/npm" "install"
+510 error node v8.10.0
+511 error npm  v3.5.2
+512 error code EMISSINGARG
+513 error typeerror Error: Missing required argument #1
+513 error typeerror     at andLogAndFinish (/usr/share/npm/lib/fetch-package-metadata.js:31:3)
+513 error typeerror     at fetchPackageMetadata (/usr/share/npm/lib/fetch-package-metadata.js:51:22)
+513 error typeerror     at resolveWithNewModule (/usr/share/npm/lib/install/deps.js:456:12)
+513 error typeerror     at /usr/share/npm/lib/install/deps.js:457:7
+513 error typeerror     at /usr/share/npm/node_modules/iferr/index.js:13:50
+513 error typeerror     at /usr/share/npm/lib/fetch-package-metadata.js:37:12
+513 error typeerror     at addRequestedAndFinish (/usr/share/npm/lib/fetch-package-metadata.js:82:5)
+513 error typeerror     at returnAndAddMetadata (/usr/share/npm/lib/fetch-package-metadata.js:117:7)
+513 error typeerror     at pickVersionFromRegistryDocument (/usr/share/npm/lib/fetch-package-metadata.js:134:20)
+513 error typeerror     at /usr/share/npm/node_modules/iferr/index.js:13:50
+514 error typeerror This is an error with npm itself. Please report this error at:
+514 error typeerror     <http://github.com/npm/npm/issues>
+515 verbose exit [ 1, true ]

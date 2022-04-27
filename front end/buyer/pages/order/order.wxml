@@ -1,0 +1,14 @@
+<!--pages/order/order.wxml-->
+<view>
+    <van-grid wx:for="{{orderList}}" wx:key="{{orderList.id}}" custom-class="grid-card" >
+      <van-cell title="{{item.id}}" icon="orders-o" value="{{item.status}}" />
+    <van-card wx:for="{{ item.productItem }}" wx:key="{{item.id}}" id="{{item.id}}" bindtap="onClick" price="{{item.price}}" title="{{item.title}}"
+      custom-class="goods-card" thumb="{{ item.mainImage }}">
+      <view slot="footer">
+    <van-button size="small" round color="linear-gradient(to right, #FF9017, #FD5432)">{{buttonName}}</van-button>
+  </view>
+      </van-card>
+    </van-grid>
+  <van-empty wx:if="{{show}}" description="{{description}}" />
+  <view style="height: 100px;"></view>
+</view>

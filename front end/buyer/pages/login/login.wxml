@@ -1,0 +1,17 @@
+<!--pages/login/login.wxml-->
+<view class="container">
+  <van-image width="80" height="80" src="/images/logo.png" />
+  <view class="itemView">
+    <input class="input" name="userName" placeholder="请输入用户名"
+    bindinput="userNameInput"/>
+  </view>
+  <view class="itemView">
+    <input class="input" password placeholder="请输入密码"
+     bindinput="passWordInput"/>
+  </view>
+  <view class="viewName" style="background-color:#fbf9fe">
+    <button class="loginBtn" bindtap="loginBtnClick">登录</button>
+  </view>
+  <view>{{infoMess}}</view>
+  <text class="info">登录即代表已同意<text class="info-text"> 用户协议 </text>和<text class="info-text"> 隐私保护政策 </text></text>
+</view>

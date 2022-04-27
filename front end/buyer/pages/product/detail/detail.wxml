@@ -1,0 +1,133 @@
+<!--pages/product/detail/detail.wxml-->
+<view>
+  <!-- 商品主图 -->
+  <van-image width="100%" height="700rpx" src="{{ product.mainImage }}" />
+  <!-- 商品信息 -->
+  <view class="goods-message">
+    <text class="price"><text class="char">¥</text>{{product.price}}</text>
+    <text class="title">{{product.title}}</text>
+    <text class="description">{{product.description}}</text>
+  </view>
+  <!-- 配送与保障信息 -->
+  <van-cell-group inset>
+    <van-cell bind:click="sorry">
+      <view slot="title">
+        <view class="goods-send">配送 <text class="">{{product.delivery}}</text></view>
+      </view>
+      <van-icon slot="right-icon" size="15px" color="#969799" name="arrow" />
+    </van-cell>
+    <van-cell bind:click="showPopup">
+      <view slot="title">
+        <view class="goods-send">保障 <text class="">{{product.assurance}}</text></view>
+      </view>
+      <van-icon slot="right-icon" size="15px" color="#969799" name="arrow" />
+    </van-cell>
+  </van-cell-group>
+  <!-- 商品详情 -->
+  <van-cell-group inset>
+    <van-cell>
+      <view slot="title">
+        <view class="goods-send">详情</view>
+      </view>
+    </van-cell>
+    <view class="goods-detail">
+      <view>
+        <text class="title">名称</text>
+        <text class="value">{{product.name}}</text>
+      </view>
+      <view>
+        <text class="title">品牌</text>
+        <text class="value">{{product.brand}}</text>
+      </view>
+      <view>
+        <text class="title">净含量</text>
+        <text class="value">{{product.netWeight}}</text>
+      </view>
+      <view>
+        <text class="title">保质期</text>
+        <text class="value">{{product.shelfLife}}</text>
+      </view>
+      <view>
+        <text class="title">使用方式</text>
+        <text class="value">{{product.useWay}}</text>
+      </view>
+      <view>
+        <text class="title">包装方式</text>
+        <text class="value">{{product.packingWay}}</text>
+      </view>
+      <view>
+        <text class="title">产地</text>
+        <text class="value">{{product.origin}}</text>
+      </view>
+      <view>
+        <text class="title">存储条件</text>
+        <text class="value">{{product.storageConditions}}</text>
+      </view>
+    </view>
+    <view style="margin-top: 5px;padding: 5px;">
+        <image class="goods-detail-image" mode="widthFix" src="{{ product.detailImage }}" />
+      </view>
+  </van-cell-group>
+  <view class="footer">
+    <text>- 已经到底了 -</text>
+  </view>
+  <!-- 商品导航 -->
+  <van-goods-action>
+    <van-goods-action-icon icon="home-o" text="首页" />
+    <van-goods-action-icon icon="service-o" text="客服" />
+    <van-goods-action-icon icon="like-o" text="收藏" bind:click="onClickStar" />
+    <van-goods-action-button text="加入购物车" type="warning" bind:click="onClickAddCart" />
+    <van-goods-action-button text="立即购买" bind:click="onClickButton" />
+  </van-goods-action>
+  <!-- 提示信息 -->
+  <van-toast id="van-toast" />
+
+  <!-- 弹出框，选择商品数量 -->
+  <van-popup show="{{ show }}" round position="bottom" custom-style="height: 40%" bind:click-overlay="onClose">
+      <view class="popup-title">
+        <text>选择数量</text>
+      </view>
+      <view class="popup-content">
+        <van-cell title="购买数量" custom-class="goods-cell" title-class="goods-cell-title" bind:click="sorry">
+      <van-stepper value="{{ 1 }}" bind:change="onChange" />
+    </van-cell>
+      </view>
+      <view class="popup-bottom">
+        <van-button custom-class="popup-button" round color="linear-gradient(to right, #FF9017, #FD5432)"
+          bind:click="onFinishAddCart">完成</van-button>
+      </view>
+  </van-popup>
+
+
+      <!-- <van-cell-group custom-class="goods-cell-group">
+    <van-cell title="已选" custom-class="goods-cell" title-class="goods-cell-title" value="请选择"
+      value-class="goods-cell-value" bind:click="sorry">
+      <van-icon slot="right-icon" size="15px" color="#969799" name="arrow" />
+    </van-cell>
+    
+    <van-cell title="配送至" custom-class="goods-cell" title-class="goods-cell-title" value="{{ product.addressInfo }}"
+      value-class="goods-cell-value" bind:click="sorry">
+      <van-icon slot="right-icon" size="15px" color="#969799" name="arrow" />
+    </van-cell>
+  </van-cell-group>
+ 
+
+  <van-popup show="{{ showStepper }}" round position="bottom" custom-style="height: 40%" bind:click-overlay="onClose">
+    <view class="popup-view">
+      <view class="popup-title">
+        <text>服务保障</text>
+      </view>
+      <view class="popup-content">
+        <block wx:for="{{salesServiceList}}">
+          <van-icon wx:if="{{item != ''}}" name="passed" size="14px" color="cornflowerblue" />
+          <text>{{item}}</text>
+        </block>
+      </view>
+      <view class="popup-bottom">
+        <van-button custom-class="popup-button" round color="linear-gradient(to right, #FF9017, #FD5432)"
+          bind:click="onFinish">完成</van-button>
+      </view>
+    </view>
+  </van-popup>
+  <!-- </view> -->
+</view>

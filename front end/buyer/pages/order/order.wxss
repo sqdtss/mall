@@ -1,0 +1,8 @@
+/* pages/order/order.wxss */
+page{
+  background-color: #F2F2F2;
+}
+.grid-card{
+  margin: 3% 3% 0% 3%;
+  border-radius: 8px;
+}

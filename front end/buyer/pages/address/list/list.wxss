@@ -1,0 +1,24 @@
+/* pages/address/list/list.wxss */
+page{
+  background-color: #F2F2F2;
+}
+.main{
+  width: 100%;
+  height: auto;
+  padding-top: 3%;
+}
+.text-mobile{
+  font-size: 30rpx;
+  font-weight: 350;
+}
+.button{
+  width: 92%;
+  margin: 4%;
+}
+.view-footer{
+  width: 100%;
+  background-color: white;
+  bottom: 0px;
+  height: 80px;
+  position: fixed;
+}

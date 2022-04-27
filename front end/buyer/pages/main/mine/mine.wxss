@@ -1,0 +1,58 @@
+/* pages/tabbar/mine/mine.wxss */
+page {
+  background-color: #F5F5F5;
+}
+.user-info {
+  width: 100%;
+  display: inline-flex;
+  padding: 25px 0 50px 0;
+  border-radius: 0 0 5% 5%;
+  background: #FF6600;
+  background-image: linear-gradient(#FF6600, #FF8C00);
+}
+
+.avatar {
+  width: 20%;
+  display: inline-flex;
+  padding-top: 4px;
+  justify-content: center;
+  align-items: center;
+}
+
+.nickname {
+  width: 80%;
+  font-size: 32rpx;
+  display: inline-flex;
+  font-weight: 410;
+  color: white;
+  justify-self: start;
+  align-items: center;
+}
+
+.mine-order{
+  margin: -10% 3% 0 3%;
+  border-radius: 6px;
+}
+
+.grid{
+  margin: 2% 3% 0 3%;
+  border-radius: 6px;
+}
+
+.cell-title{
+  font-size: 28rpx;
+  font-weight: 450;
+}
+
+.cell-value{
+  font-size: 24rpx;
+}
+
+
+/* .grid-order{
+  z-index: 1;
+  margin: -10% 3% 0% 3%;
+  border-radius: 8px;
+}
+
+ */
