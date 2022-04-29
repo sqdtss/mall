@@ -24,6 +24,7 @@ func Router() {
 		// 用户登录API
 		seller.GET("/captcha", api.GetCaptcha)
 		seller.POST("/login", api.SellerLogin)
+		seller.POST("/register", api.SellerRegister)
 
 		// 开启JWT认证,以下接口需要认证成功才能访问
 		seller.Use(middleware.JwtAuth())
@@ -64,6 +65,7 @@ func Router() {
 		// 用户登录API
 		buyer.GET("/captcha", api.GetCaptcha)
 		buyer.POST("/login", api.BuyerLogin)
+		buyer.POST("/register", api.BuyerRegister)
 
 		// 开启JWT认证,以下接口需要认证成功才能访问
 		//buyer.Use(middleware.JwtAuth())

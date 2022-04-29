@@ -1,6 +1,6 @@
 package models
 
-// 数据库，商品数据映射模型
+// Product 数据库，商品数据映射模型
 type Product struct {
 	Id                uint64  `gorm:"primaryKey"         json:"id"`
 	CategoryId        uint64  `gorm:"category_id"        json:"categoryId"`
@@ -27,7 +27,7 @@ type Product struct {
 	Updated           string  `gorm:"updated"            json:"updated"`
 }
 
-// Seller 商品创建参数模型
+// SellerProductCreateParam Seller 商品创建参数模型
 type SellerProductCreateParam struct {
 	CategoryId        uint64  `json:"categoryId"         binding:"required,gt=0"`
 	Title             string  `json:"title"              binding:"required"`
@@ -50,12 +50,12 @@ type SellerProductCreateParam struct {
 	Status            uint    `json:"status"             binding:"required,oneof=1 2"`
 }
 
-// Seller 商品删除参数模型
+// SellerProductDeleteParam Seller 商品删除参数模型
 type SellerProductDeleteParam struct {
 	Id uint64 `form:"id" binding:"required,gt=0"`
 }
 
-// Seller 商品更新参数模型
+// SellerProductUpdateParam Seller 商品更新参数模型
 type SellerProductUpdateParam struct {
 	Id                uint64  `json:"id"                 binding:"required,gt=0"`
 	CategoryId        uint64  `json:"categoryId"         binding:"required,gt=0"`
@@ -79,18 +79,18 @@ type SellerProductUpdateParam struct {
 	Status            uint    `json:"status"             binding:"omitempty,oneof=1 2"`
 }
 
-// Seller 商品状态更新参数模型
+// SellerProductStatusUpdateParam Seller 商品状态更新参数模型
 type SellerProductStatusUpdateParam struct {
 	Id     uint64 `json:"id"     binding:"required,gt=0"`
 	Status uint   `json:"status" binding:"required,oneof=1 2"`
 }
 
-// Seller 商品信息查询参数模型
+// SellerProductInfoParam Seller 商品信息查询参数模型
 type SellerProductInfoParam struct {
 	Id uint64 `form:"id" binding:"required,gt=0"`
 }
 
-// Seller 商品列表查询参数模型
+// SellerProductListParam Seller 商品列表查询参数模型
 type SellerProductListParam struct {
 	Page       Page
 	Id         uint64 `form:"id"         binding:"omitempty,gt=0"`
@@ -99,7 +99,7 @@ type SellerProductListParam struct {
 	Status     uint   `form:"status"     binding:"omitempty,oneof=1 2"`
 }
 
-// Seller 商品信息传输模型
+// SellerProductInfo Seller 商品信息传输模型
 type SellerProductInfo struct {
 	Id                uint64  `json:"id"`
 	CategoryId        uint64  `json:"categoryId"`
@@ -122,7 +122,7 @@ type SellerProductInfo struct {
 	DetailImage       string  `json:"detailImage"`
 }
 
-// Seller 商品项传输模型
+// SellerProductItem Seller 商品项传输模型
 type SellerProductItem struct {
 	Id        uint64  `json:"id"`
 	Title     string  `json:"title"`
@@ -131,7 +131,7 @@ type SellerProductItem struct {
 	MainImage string  `json:"mainImage"`
 }
 
-// Seller 商品列表传输模型
+// SellerProductList Seller 商品列表传输模型
 type SellerProductList struct {
 	Id        uint64  `json:"id"`
 	Title     string  `json:"title"`
@@ -143,22 +143,22 @@ type SellerProductList struct {
 	Created   string  `json:"created"`
 }
 
-// Buyer 商品列表参数模型
+// BuyerProductListParam Buyer 商品列表参数模型
 type BuyerProductListParam struct {
 	CategoryId uint64 `form:"categoryId"`
 }
 
-// Buyer 商品搜索参数模型
+// BuyerProductSearchParam Buyer 商品搜索参数模型
 type BuyerProductSearchParam struct {
 	KeyWord string `form:"keyWord"`
 }
 
-// Buyer 商品详情参数模型
+// BuyerProductDetailParam Buyer 商品详情参数模型
 type BuyerProductDetailParam struct {
 	ProductId uint64 `form:"productId"`
 }
 
-// Buyer 商品列表传输模型
+// BuyerProductList Buyer 商品列表传输模型
 type BuyerProductList struct {
 	Id          uint64  `json:"id"`
 	MainImage   string  `json:"mainImage"`
@@ -168,7 +168,7 @@ type BuyerProductList struct {
 	Sales       int     `json:"sales"`
 }
 
-// Buyer 商品项传输模型
+// BuyerProductItem Buyer 商品项传输模型
 type BuyerProductItem struct {
 	Id        uint64  `json:"id"`
 	Title     string  `json:"title"`
@@ -176,7 +176,7 @@ type BuyerProductItem struct {
 	MainImage string  `json:"mainImage"`
 }
 
-// Buyer 商品信息传输模型
+// BuyerProductDetail Buyer 商品信息传输模型
 type BuyerProductDetail struct {
 	Id                uint64  `json:"id"`
 	Title             string  `json:"title"`

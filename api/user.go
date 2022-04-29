@@ -18,7 +18,7 @@ func GetCaptcha(c *gin.Context) {
 	response.Success("操作成功", data, c)
 }
 
-// SellerLogin 用户登录
+// SellerLogin Seller 登录
 func SellerLogin(c *gin.Context) {
 	var param models.SellerLoginParam
 	if err := c.ShouldBind(&param); err != nil {
@@ -45,6 +45,21 @@ func SellerLogin(c *gin.Context) {
 	response.Failed("用户名或密码错误", c)
 }
 
+// SellerRegister Seller 注册
+func SellerRegister(c *gin.Context) {
+	var param models.SellerRegisterParam
+	if err := c.ShouldBind(&param); err != nil {
+		response.Failed("请求参数无效", c)
+		return
+	}
+
+	if count := seller.SellerRegister(param); count > 0 {
+		response.Success("创建用户成功", count, c)
+		return
+	}
+	response.Failed("创建失败", c)
+}
+
 // BuyerLogin 用户登录
 func BuyerLogin(c *gin.Context) {
 	var param models.BuyerLoginParam
@@ -65,4 +80,18 @@ func BuyerLogin(c *gin.Context) {
 		return
 	}
 	response.Failed("用户名或密码错误", c)
+}
+
+// BuyerRegister Buyer 注册
+func BuyerRegister(c *gin.Context) {
+	var param models.BuyerRegisterParam
+	if err := c.ShouldBind(&param); err != nil {
+		response.Failed("请求参数无效", c)
+		return
+	}
+	if count := buyer.BuyerRegister(param); count > 0 {
+		response.Success("创建用户成功", count, c)
+		return
+	}
+	response.Failed("创建失败", c)
 }
