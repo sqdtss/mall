@@ -44,21 +44,21 @@ go build
 ```
 
 ## 运行截图
-###### 卖家登录： 
+###### 卖家登录
 ![卖家登录](readme/seller_login.png)
-###### 首页： 
+###### 首页
 ![](readme/seller_index.png)
-###### 商品： 
+###### 商品
 ![](readme/product_list.png)![](readme/product_add.png)![](readme/seller_category.png)
-###### 订单： 
+###### 订单
 ![](readme/order_list.png)![](readme/order_set.png)
-###### 买家登录：
+###### 买家登录
 ![](readme/buyer_login.png)
-###### 首页： 
+###### 首页
 ![](readme/buyer_index.png)
-###### 分类：
+###### 分类
 ![](readme/buyer_category.png)
-###### 购物车：
+###### 购物车
 ![](readme/buyer_category.png)
-###### 我的：
+###### 我的
 ![](readme/buyer_mine.png)
