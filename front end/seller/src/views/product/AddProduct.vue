@@ -71,7 +71,7 @@
         </el-form-item>
         <el-form-item label="上传图片">
           <el-upload
-              action="http://localhost:8000/web/upload"
+              action="http://localhost:8000/seller/upload"
               :headers="{'token': token}"
               :limit="1"
               :show-file-list="false"
@@ -90,7 +90,7 @@
         </el-form-item>
         <el-form-item label="上传图片">
           <el-upload
-              action="http://localhost:8000/web/upload"
+              action="http://localhost:8000/seller/upload"
               :headers="{'token': token}"
               :limit="1"
               :show-file-list="false"
