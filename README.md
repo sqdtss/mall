@@ -20,12 +20,12 @@ git clone https://github.com/sqdtss/mall.git
 #### 执行 Sql 命令
 ###### 创建数据库 mall
 ```SQL
-    create databse mall;
-    use mall;
+create databse mall;
+use mall;
 ```
 ###### 创建数据表
 分别执行 sql/address.sql, sql/buyer.sql, sql/seller.sql, sql/order.sql, sql/product.sql, sql/category.sql 中的 sql 语句以创建数据表。
-
+(亦可改为 AutoMigrate, 因原项目如此设置，考虑到如此有如此的好处，加上懒【重点】，未改成 AutoMigrate 方式， 大佬可自行修改呀)
 #### 运行 web seller 前端
 ```shell
 cd front\ end/seller
