@@ -1,6 +1,6 @@
 # mall
-此项目是一个基于 Golang，Gin，GORM，Mysql, Redis, ElasticSearch, Vue, WXML 等常用框架/工具搭建的商城系统，参考了 https://github.com/zchengo/mall。
-以原项目为基础，做了一定的调整，更符合Restful API风格，以及添加了后端部分功能，以学习、掌握后端技术栈为主要目的，如有任何问题欢迎 issues 和私信交流讨论！！！
+此项目是一个基于 Golang，Gin，GORM，Mysql, Redis, ElasticSearch, Vue, WXML 等常用框架/工具搭建的商城系统，参考了 https://github.com/zchengo/mall 。
+以原项目为基础，做了一定的调整，更符合 Restful API 风格，以及添加了后端部分功能，以学习、掌握后端技术栈为主要目的，如有任何问题欢迎 Issues 和私信交流讨论！！！
 ## 运行环境
 |环境|版本|
 |--|--|
