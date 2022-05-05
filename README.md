@@ -17,6 +17,15 @@
 ```shell
 git clone https://github.com/sqdtss/mall.git
 ```
+#### 执行 Sql 命令
+###### 创建数据库 mall
+```SQL
+    create databse mall;
+    use mall;
+```
+###### 创建数据表
+分别执行 sql/address.sql, sql/buyer.sql, sql/seller.sql, sql/order.sql, sql/product.sql, sql/category.sql 中的 sql 语句以创建数据表。
+
 #### 运行 web seller 前端
 ```shell
 cd front\ end/seller
