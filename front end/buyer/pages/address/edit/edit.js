@@ -47,7 +47,7 @@ Page({
     });
   },
   async delete(event) {
-    let res = await request.DELETE('/address/delete', { 
+    let res = await request.DELETE('/address', { 
       addressId: this.data.addressId
     })
     if(res.data.code === 200){
@@ -57,7 +57,7 @@ Page({
     }
   },
   async submitForm(options) {
-    let res = await request.PUT('/address/update',{
+    let res = await request.PUT('/address',{
       name: this.data.name,
       mobile: this.data.mobile,
       postalCode: this.data.postalCode,

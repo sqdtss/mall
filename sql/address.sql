@@ -23,7 +23,7 @@ SET FOREIGN_KEY_CHECKS = 0;
 DROP TABLE IF EXISTS `address`;
 CREATE TABLE `address` (
   `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT COMMENT '地址id',
-  `user_id` varchar(200) DEFAULT NULL COMMENT '用户id',
+  `user_id` bigint(20) DEFAULT NULL COMMENT '用户id',
   `name` varchar(255) DEFAULT NULL COMMENT '收货人姓名',
   `mobile` char(16) DEFAULT NULL COMMENT '手机号',
   `postal_code` int(6) DEFAULT NULL COMMENT '邮政编码',

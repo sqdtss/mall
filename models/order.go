@@ -7,7 +7,7 @@ type Order struct {
 	TotalPrice  float64 `gorm:"total_price"`
 	Status      string  `gorm:"status"`
 	AddressId   uint64  `gorm:"address_id"`
-	UserId      string  `gorm:"user_id"`
+	UserId      uint64  `gorm:"user_id"`
 	NickName    string  `gorm:"nick_name"`
 	Created     string  `gorm:"created"`
 	Updated     string  `gorm:"updated"`
@@ -70,14 +70,14 @@ type SellerOrderDetail struct {
 
 // BuyerOrderSubmitParam Buyer 订单提交参数模型
 type BuyerOrderSubmitParam struct {
-	UserId   string `form:"userId"    json:"userId"`
+	UserId   uint64 `form:"userId"    json:"userId"`
 	NickName string `form:"nickName"  json:"nickName"`
 	Status   string `form:"status"    json:"status"`
 }
 
 // BuyerOrderQueryParam Buyer 订单查询参数模型
 type BuyerOrderQueryParam struct {
-	UserId string `form:"userId"    json:"userId"`
+	UserId uint64 `form:"userId"    json:"userId"`
 	Status string `form:"status"    json:"status"`
 }
 

@@ -9,14 +9,14 @@ import (
 
 var browse service.BrowseService
 
-// BuyerSaveBrowseRecord Buyer 保存浏览记录
-func BuyerSaveBrowseRecord(c *gin.Context) {
+// BuyerAddBrowseRecord Buyer 添加浏览记录
+func BuyerAddBrowseRecord(c *gin.Context) {
 	var param models.BuyerBrowseSaveParam
 	if err := c.ShouldBind(&param); err != nil {
 		response.Failed("请求参数无效", c)
 		return
 	}
-	if count := browse.Save(param); count > 0 {
+	if count := browse.Add(param); count > 0 {
 		response.Success("保存成功", count, c)
 		return
 	}

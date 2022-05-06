@@ -79,30 +79,30 @@ func Router() {
 		buyer.GET("/product/detail", api.BuyerGetProductDetail)
 
 		// 商品订单API
-		buyer.POST("/order/create", api.BuyerCreateOrder)
+		buyer.POST("/order", api.BuyerCreateOrder)
 		buyer.GET("/order/list", api.BuyerGetOrderList)
 
 		// 购物车API
-		buyer.POST("/cart/add", api.BuyerAddCart)
-		buyer.DELETE("/cart/delete", api.BuyerDeleteCart)
-		buyer.DELETE("/cart/clear", api.BuyerClearCart)
+		buyer.POST("/cart", api.BuyerAddCart)
+		buyer.DELETE("/cart", api.BuyerDeleteCart)
+		buyer.DELETE("/cart/all", api.BuyerClearCart)
 		buyer.GET("/cart/info", api.BuyerGetCartInfo)
 
 		// 收货地址API
-		buyer.POST("/address/add", api.BuyerAddAddress)
-		buyer.DELETE("/address/delete", api.BuyerDeleteAddress)
-		buyer.PUT("/address/update", api.BuyerUpdateAddress)
+		buyer.POST("/address", api.BuyerAddAddress)
+		buyer.DELETE("/address", api.BuyerDeleteAddress)
+		buyer.PUT("/address", api.BuyerUpdateAddress)
 		buyer.GET("/address/info", api.BuyerGetAddressUpdateInfo)
 		buyer.GET("/address/list", api.BuyerGetAddressList)
 
 		// 商品收藏API
-		buyer.POST("/collection/add", api.BuyerAddCollection)
-		buyer.DELETE("/collection/delete", api.BuyerDeleteCollection)
+		buyer.POST("/collection", api.BuyerAddCollection)
+		buyer.DELETE("/collection", api.BuyerDeleteCollection)
 		buyer.GET("/collection/list", api.BuyerGetCollectionList)
 
 		// 商品浏览记录API
-		buyer.POST("/browse/save", api.BuyerSaveBrowseRecord)
-		buyer.DELETE("/browse/delete", api.BuyerDeleteBrowseRecord)
+		buyer.POST("/browse", api.BuyerAddBrowseRecord)
+		buyer.DELETE("/browse", api.BuyerDeleteBrowseRecord)
 		buyer.GET("/browse/list", api.BuyerGetBrowseRecordList)
 	}
 

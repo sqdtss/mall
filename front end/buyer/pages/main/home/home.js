@@ -14,7 +14,7 @@ Page({
     wx.navigateTo({
       url: '/pages/product/detail/detail?id=' + event.currentTarget.id
     })
-    await request.POST('/browse/save', {
+    await request.POST('/browse', {
       productId: event.currentTarget.id,
       userId: wx.getStorageSync('uid')
     })

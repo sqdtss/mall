@@ -17,7 +17,7 @@ Page({
     starStatus: 0,
   },
   async onClickStar() {
-    let res = await request.POST('/collection/add',{ 
+    let res = await request.POST('/collection',{ 
       productId: this.data.productId, 
       userId: wx.getStorageSync('uid')
     });
@@ -55,7 +55,7 @@ Page({
    */
   async onFinishAddCart() {
     this.setData({ show: false });
-    let res = await request.POST('/cart/add',{
+    let res = await request.POST('/cart',{
       productId: this.data.productId,
       productCount: this.data.productCount,
       userId: wx.getStorageSync('uid')

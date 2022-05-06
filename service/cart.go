@@ -12,20 +12,20 @@ type CartService struct {
 
 // Add Buyer 添加购物车
 func (*CartService) Add(param models.BuyerCartAddParam) bool {
-	key := strings.Join([]string{"user", param.UserId, "cart"}, ":")
+	key := strings.Join([]string{"buyer", strconv.FormatUint(param.UserId, 10), "cart"}, ":")
 	pid := strconv.Itoa(int(param.ProductId))
 	return global.Rdb.HSetNX(ctx, key, pid, param.ProductCount).Val()
 }
 
 // Delete Buyer 删除购物车中的某项商品
 func (*CartService) Delete(param models.BuyerCartDeleteParam) int64 {
-	key := strings.Join([]string{"user", param.UserId, "cart"}, ":")
+	key := strings.Join([]string{"buyer", strconv.FormatUint(param.UserId, 10), "cart"}, ":")
 	return global.Rdb.HDel(ctx, key, param.ProductId).Val()
 }
 
 // Clear Buyer 清楚购物车中的商品
 func (*CartService) Clear(param models.BuyerCartClearParam) int64 {
-	key := strings.Join([]string{"user", param.UserId, "cart"}, ":")
+	key := strings.Join([]string{"buyer", strconv.FormatUint(param.UserId, 10), "cart"}, ":")
 	pidsAndCounts := global.Rdb.HGetAll(ctx, key).Val()
 	var rows int64
 	for id, _ := range pidsAndCounts {
@@ -37,7 +37,7 @@ func (*CartService) Clear(param models.BuyerCartClearParam) int64 {
 // GetInfo Buyer 获取购物车信息
 func (*CartService) GetInfo(param models.BuyerCartQueryParam) models.BuyerCartInfo {
 	var cartInfo models.BuyerCartInfo
-	key := strings.Join([]string{"user", param.UserId, "cart"}, ":")
+	key := strings.Join([]string{"buyer", strconv.FormatUint(param.UserId, 10), "cart"}, ":")
 	productIdsAndCounts := global.Rdb.HGetAll(ctx, key).Val()
 	productIds := make([]uint, 0)
 	idsAndCounts := make(map[uint64]int, 0)

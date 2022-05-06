@@ -12,7 +12,7 @@ Page({
     })   
   },
   async deleteAll() {
-    let res = await request.DELETE('/collection/delete', {
+    let res = await request.DELETE('/collection', {
       userId: wx.getStorageSync('uid')
     })
     if(res.data.code === 200){

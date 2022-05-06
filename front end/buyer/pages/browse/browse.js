@@ -22,7 +22,7 @@ Page({
   noop() {},
 
   delete: async function() {
-    let res = await request.DELETE('/browse/delete', {
+    let res = await request.DELETE('/browse', {
       userId: wx.getStorageSync('uid'),
       productIds: this.data.productIds
     })

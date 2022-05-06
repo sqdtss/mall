@@ -38,7 +38,7 @@ Page({
     this.setData({ area: event.detail.values[0].name + " " + event.detail.values[1].name + " " + event.detail.values[2].name});
   },
   async submitForm(options) {
-    let res = await request.POST('/address/add',{
+    let res = await request.POST('/address',{
       name: this.data.name,
       mobile: this.data.mobile,
       postalCode: this.data.postalCode,

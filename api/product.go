@@ -101,7 +101,7 @@ func BuyerGetProductList(c *gin.Context) {
 	response.Success("查询成功", productList, c)
 }
 
-// BuyerGetProductList Buyer 获取商品搜索列表
+// BuyerGetProductSearchList Buyer 获取商品搜索列表
 func BuyerGetProductSearchList(c *gin.Context) {
 	var param models.BuyerProductSearchParam
 	if err := c.ShouldBind(&param); err != nil {

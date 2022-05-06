@@ -11,9 +11,9 @@ import (
 type BrowseService struct {
 }
 
-// Save Buyer 保存浏览记录
-func (*BrowseService) Save(param models.BuyerBrowseSaveParam) float64 {
-	key := strings.Join([]string{"user", param.UserId, "browse"}, ":")
+// Add Buyer 添加浏览记录
+func (*BrowseService) Add(param models.BuyerBrowseSaveParam) float64 {
+	key := strings.Join([]string{"user", strconv.FormatUint(param.UserId, 10), "browse"}, ":")
 	now := float64(time.Now().Unix())
 	pid := strconv.Itoa(int(param.ProductId))
 	if count := global.Rdb.ZIncrBy(ctx, key, now, pid).Val(); count > 0 {
@@ -24,13 +24,13 @@ func (*BrowseService) Save(param models.BuyerBrowseSaveParam) float64 {
 
 // Delete Buyer 删除浏览记录
 func (*BrowseService) Delete(param models.BuyerBrowseDeleteParam) int64 {
-	key := strings.Join([]string{"user", param.UserId, "browse"}, ":")
+	key := strings.Join([]string{"user", strconv.FormatUint(param.UserId, 10), "browse"}, ":")
 	return global.Rdb.ZRem(ctx, key, param.ProductIds).Val()
 }
 
 // GetList Buyer 获取浏览记录列表
 func (*BrowseService) GetList(param models.BuyerBrowseQueryParam) []models.BuyerBrowseRecordList {
-	key := strings.Join([]string{"user", param.UserId, "browse"}, ":")
+	key := strings.Join([]string{"user", strconv.FormatUint(param.UserId, 10), "browse"}, ":")
 
 	// 删除30天前的浏览记录
 	before30Day := time.Now().AddDate(0, 0, -30).Unix()

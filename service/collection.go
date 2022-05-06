@@ -12,13 +12,13 @@ type CollectionService struct {
 
 // Add Buyer 添加收藏的商品
 func (*CollectionService) Add(param models.BuyerCollectionAddParam) int64 {
-	key := strings.Join([]string{"user", param.UserId, "collect"}, ":")
+	key := strings.Join([]string{"buyer", strconv.FormatUint(param.UserId, 10), "collect"}, ":")
 	return global.Rdb.SAdd(ctx, key, param.ProductId).Val()
 }
 
 // Delete Buyer 删除收藏的商品
 func (*CollectionService) Delete(param models.BuyerCollectionDeleteParam) int64 {
-	key := strings.Join([]string{"user", param.UserId, "collect"}, ":")
+	key := strings.Join([]string{"buyer", strconv.FormatUint(param.UserId, 10), "collect"}, ":")
 	pids := global.Rdb.SMembers(ctx, key).Val()
 	return global.Rdb.SRem(ctx, key, pids).Val()
 }
@@ -26,7 +26,7 @@ func (*CollectionService) Delete(param models.BuyerCollectionDeleteParam) int64 
 // GetList Buyer 获取收藏的商品列表
 func (*CollectionService) GetList(param models.BuyerCollectionQueryParam) []models.BuyerCollectionList {
 	var items []models.BuyerCollectionList
-	key := strings.Join([]string{"user", param.UserId, "collect"}, ":")
+	key := strings.Join([]string{"buyer", strconv.FormatUint(param.UserId, 10), "collect"}, ":")
 	pids := global.Rdb.SMembers(ctx, key).Val()
 	var productIds []uint
 	for _, pid := range pids {

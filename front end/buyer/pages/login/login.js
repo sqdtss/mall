@@ -39,7 +39,7 @@ Page({
       Password: this.data.passWord,
     })
     if(response.data.code === 200){
-      wx.setStorage({ key: "uid", data: response.data.data});
+      wx.setStorage({ key: "uid", data: response.data.data.uid});
       wx.switchTab({ url: '/pages/main/home/home' })
     } else {
       this.setData({

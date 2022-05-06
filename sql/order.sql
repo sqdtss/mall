@@ -27,7 +27,7 @@ CREATE TABLE `order` (
   `total_price` decimal(20,2) DEFAULT NULL COMMENT '合计',
   `status` char(20) CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT NULL COMMENT '订单状态',
   `address_id` bigint(20) DEFAULT NULL COMMENT '地址id',
-  `user_id` varchar(200) CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT NULL COMMENT '用户id',
+  `user_id` bigint(20) DEFAULT NULL COMMENT '用户id',
   `nick_name` char(50) CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT NULL COMMENT '用户昵称',
   `created` char(50) CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT NULL COMMENT '创建时间',
   `updated` char(50) CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT NULL COMMENT '更新时间',

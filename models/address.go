@@ -3,7 +3,7 @@ package models
 // Address 数据库，收货地址数据映射模型
 type Address struct {
 	Id              uint   `gorm:"primaryKey"`
-	UserId          string `gorm:"user_id"`
+	UserId          uint64 `gorm:"user_id"`
 	Name            string `gorm:"name"`
 	Mobile          string `gorm:"mobile"`
 	PostalCode      int    `gorm:"postal_code"`
@@ -18,7 +18,7 @@ type Address struct {
 
 // BuyerAddressAddParam Buyer 收货地址添加参数模型
 type BuyerAddressAddParam struct {
-	UserId          string `form:"userId"`
+	UserId          uint64 `form:"userId"`
 	Name            string `form:"name"`
 	Mobile          string `form:"mobile"`
 	PostalCode      int    `form:"postalCode"`
@@ -32,7 +32,7 @@ type BuyerAddressAddParam struct {
 // BuyerAddressUpdateParam Buyer 收货地址更新参数模型
 type BuyerAddressUpdateParam struct {
 	Id              uint   `form:"id"`
-	UserId          string `form:"userId"`
+	UserId          uint64 `form:"userId"`
 	Name            string `form:"name"`
 	Mobile          string `form:"mobile"`
 	PostalCode      int    `form:"postalCode"`
@@ -55,7 +55,7 @@ type BuyerAddressInfoParam struct {
 
 // BuyerAddressListParam Buyer 收货地址列表参数模型
 type BuyerAddressListParam struct {
-	UserId string `form:"userId" json:"userId"`
+	UserId uint64 `form:"userId" json:"userId"`
 }
 
 // BuyerAddressList Buyer 收货地址列表传输模型

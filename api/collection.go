@@ -1,6 +1,7 @@
 package api
 
 import (
+	"fmt"
 	"github.com/gin-gonic/gin"
 	"mall/models"
 	"mall/response"
@@ -27,6 +28,7 @@ func BuyerAddCollection(c *gin.Context) {
 func BuyerDeleteCollection(c *gin.Context) {
 	var param models.BuyerCollectionDeleteParam
 	if err := c.ShouldBind(&param); err != nil {
+		fmt.Println(err)
 		response.Failed("请求参数无效", c)
 		return
 	}

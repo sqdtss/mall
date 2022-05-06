@@ -4,24 +4,24 @@ package models
 type BuyerCartAddParam struct {
 	ProductId    uint   `form:"productId"`
 	ProductCount uint   `form:"productCount"`
-	UserId       string `form:"userId"`
+	UserId       uint64 `form:"userId"`
 }
 
 // BuyerCartDeleteParam Buyer 购物车删除参数模型
 type BuyerCartDeleteParam struct {
 	ProductId string `form:"productId"`
-	UserId    string `form:"userId"`
+	UserId    uint64 `form:"userId"`
 }
 
 // BuyerCartClearParam Buyer 购物车清除参数模型
 type BuyerCartClearParam struct {
-	UserId string `form:"userId"`
+	UserId uint64 `form:"userId"`
 }
 
 // BuyerCartQueryParam Buyer 购物车信息查询参数模型
 type BuyerCartQueryParam struct {
 	ProductId uint   `form:"productId"`
-	UserId    string `form:"userId"`
+	UserId    uint64 `form:"userId"`
 }
 
 // BuyerCartItem Buyer 购物车商品项传输模型

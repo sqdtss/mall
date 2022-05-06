@@ -30,7 +30,7 @@ func BuyerDeleteAddress(c *gin.Context) {
 		response.Failed("请求参数无效", c)
 		return
 	}
-	if count := address.Delete(key.AddressId); count > 0 {
+	if count := address.Delete(key); count > 0 {
 		response.Success("删除成功", count, c)
 		return
 	}

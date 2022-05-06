@@ -39,8 +39,8 @@ func (*AddressService) Add(param models.BuyerAddressAddParam) int64 {
 }
 
 // Delete Buyer 删除地址
-func (*AddressService) Delete(id uint) int64 {
-	return global.Db.Delete(&models.Address{}, id).RowsAffected
+func (*AddressService) Delete(param models.BuyerAddressDeleteParam) int64 {
+	return global.Db.Delete(&models.Address{}, param.AddressId).RowsAffected
 }
 
 // Update Buyer 更新地址
@@ -74,7 +74,7 @@ func (*AddressService) Update(param models.BuyerAddressUpdateParam) int64 {
 }
 
 // GetId Buyer 获取地址Id
-func (*AddressService) GetId(uid string) uint64 {
+func (*AddressService) GetId(uid uint64) uint64 {
 	var id uint64
 	global.Db.Table("address").Select("id").
 		Where("is_default = ? and user_id = ?", 1, uid).Take(&id)
@@ -89,7 +89,7 @@ func (*AddressService) GetInfo(id uint) models.BuyerAddressUpdateInfo {
 }
 
 // GetList Buyer 获取地址列表
-func (*AddressService) GetList(uid string) []models.BuyerAddressList {
+func (*AddressService) GetList(uid uint64) []models.BuyerAddressList {
 	var aList []models.BuyerAddressList
 	global.Db.Table("address").Where("user_id = ?", uid).Order("is_default").Find(&aList)
 	return aList
